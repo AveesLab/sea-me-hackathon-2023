@@ -1,0 +1,29 @@
+package commonapi
+
+interface Hackathon {
+  version {major 1 minor 0}
+  method accel {
+    in {
+      Int32 value
+    }
+    out {
+      Int32 result
+    }
+  }
+  method rpm {
+    in {
+      Int32 value
+    }
+    out {
+      Int32 result
+    }
+  }
+  method button {
+    in {
+      Int32 value
+    }
+    out {
+      Int32 result
+    }
+  }
+}

@@ -1,0 +1,24 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-4-SOMEIP_deployment_spec.fdepl"
+import "Hackathon.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface commonapi.Hackathon {
+        SomeIpServiceID = 4660
+
+        method accel {
+                SomeIpMethodID = 123
+        }
+
+        method rpm {
+                SomeIpMethodID = 124
+        }
+	    method button {
+		        SomeIpMethodID = 125
+	    }
+}
+
+define org.genivi.commonapi.someip.deployment for provider as MyService {
+        instance commonapi.Hackathon {
+                InstanceId = "test"
+                SomeIpInstanceID = 22136
+        }
+}
