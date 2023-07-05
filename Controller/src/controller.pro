@@ -66,3 +66,7 @@ HEADERS += \
     Rpm.h \
     Accel.h \
     Order.h
+<<<<<<< HEAD
+=======
+
+>>>>>>> c1af1eb92b0bd10d67e29aebbbbc01437f4f0c84
