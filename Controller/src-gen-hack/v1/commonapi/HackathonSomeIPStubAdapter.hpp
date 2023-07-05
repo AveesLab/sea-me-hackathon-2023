@@ -75,7 +75,7 @@ public:
         std::tuple< int32_t>,
         std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>>,
         std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>>
-    > buttonStubDispatcher;
+    > orderStubDispatcher;
     
     HackathonSomeIPStubAdapterInternal(
         const CommonAPI::SomeIP::Address &_address,
@@ -103,8 +103,8 @@ public:
             std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)))
         
         ,
-        buttonStubDispatcher(
-            &HackathonStub::button,
+        orderStubDispatcher(
+            &HackathonStub::order,
             false,
             _stub->hasElement(2),
             std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)),
@@ -113,7 +113,7 @@ public:
     {
         HackathonSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7b) }, &accelStubDispatcher );
         HackathonSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7c) }, &rpmStubDispatcher );
-        HackathonSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7d) }, &buttonStubDispatcher );
+        HackathonSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7d) }, &orderStubDispatcher );
         // Provided events/fields
     }
 

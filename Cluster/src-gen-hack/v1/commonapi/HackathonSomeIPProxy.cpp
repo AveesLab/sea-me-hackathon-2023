@@ -172,7 +172,7 @@ std::future<CommonAPI::CallStatus> HackathonSomeIPProxy::rpmAsync(const int32_t 
         std::make_tuple(deploy_result));
 }
 
-void HackathonSomeIPProxy::button(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info) {
+void HackathonSomeIPProxy::order(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info) {
     CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_value(_value, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_result(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::SomeIP::ProxyHelper<
@@ -200,7 +200,7 @@ void HackathonSomeIPProxy::button(int32_t _value, CommonAPI::CallStatus &_intern
     _result = deploy_result.getValue();
 }
 
-std::future<CommonAPI::CallStatus> HackathonSomeIPProxy::buttonAsync(const int32_t &_value, ButtonAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+std::future<CommonAPI::CallStatus> HackathonSomeIPProxy::orderAsync(const int32_t &_value, OrderAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
     CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_value(_value, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_result(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     return CommonAPI::SomeIP::ProxyHelper<

@@ -90,7 +90,7 @@ class HackathonStub
 public:
     typedef std::function<void (int32_t _result)> accelReply_t;
     typedef std::function<void (int32_t _result)> rpmReply_t;
-    typedef std::function<void (int32_t _result)> buttonReply_t;
+    typedef std::function<void (int32_t _result)> orderReply_t;
 
     virtual ~HackathonStub() {}
     void lockInterfaceVersionAttribute(bool _lockAccess) { static_cast<void>(_lockAccess); }
@@ -103,8 +103,8 @@ public:
     virtual void accel(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, accelReply_t _reply) = 0;
     /// This is the method that will be called on remote calls on the method rpm.
     virtual void rpm(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, rpmReply_t _reply) = 0;
-    /// This is the method that will be called on remote calls on the method button.
-    virtual void button(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, buttonReply_t _reply) = 0;
+    /// This is the method that will be called on remote calls on the method order.
+    virtual void order(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, orderReply_t _reply) = 0;
 
 
     using CommonAPI::Stub<HackathonStubAdapter, HackathonStubRemoteEvent>::initStubAdapter;

@@ -11,9 +11,9 @@ define org.genivi.commonapi.someip.deployment for interface commonapi.Hackathon 
         method rpm {
                 SomeIpMethodID = 124
         }
-	    method button {
-		        SomeIpMethodID = 125
-	    }
+	method order {
+		SomeIpMethodID = 125
+	}
 }
 
 define org.genivi.commonapi.someip.deployment for provider as MyService {

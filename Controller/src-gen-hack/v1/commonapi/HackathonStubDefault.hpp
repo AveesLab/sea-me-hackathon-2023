@@ -72,7 +72,7 @@ public:
         int32_t result = 0;
         _reply(result);
     }
-    COMMONAPI_EXPORT virtual void button(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, buttonReply_t _reply) {
+    COMMONAPI_EXPORT virtual void order(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _value, orderReply_t _reply) {
         (void)_client;
         (void)_value;
         int32_t result = 0;

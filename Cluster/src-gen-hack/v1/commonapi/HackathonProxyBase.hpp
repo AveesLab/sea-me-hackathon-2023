@@ -39,14 +39,14 @@ public:
 
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> AccelAsyncCallback;
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> RpmAsyncCallback;
-    typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> ButtonAsyncCallback;
+    typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> OrderAsyncCallback;
 
     virtual void accel(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> accelAsync(const int32_t &_value, AccelAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual void rpm(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> rpmAsync(const int32_t &_value, RpmAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual void button(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual std::future<CommonAPI::CallStatus> buttonAsync(const int32_t &_value, ButtonAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void order(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> orderAsync(const int32_t &_value, OrderAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
 
     virtual std::future<void> getCompletionFuture() = 0;
 };
