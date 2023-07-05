@@ -28,4 +28,4 @@ public slots:
     void adjustOrder(int clicknum);
 };
 
-#endif // BUTTON_H
+#endif // ORDER_H

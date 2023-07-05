@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("weatherAPI", &weatherAPI);
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&(*myService), &HackathonStubImpl::valueAccel, &accelOutput, &AccelOutput::adjustAccelValue); // Connect the instances
-    QObject::connect(&(*myService), &HackathonStubImpl::valueButton, &orderOutput, &OrderOutput::adjustOrderValue); // Connect the instances
+    QObject::connect(&(*myService), &HackathonStubImpl::valueOrder, &orderOutput, &OrderOutput::adjustOrderValue); // Connect the instances
     QObject::connect(&(*myService), &HackathonStubImpl::valueRpm, &rpmOutput, &RpmOutput::adjustRpmValue); // Connect the instances
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
