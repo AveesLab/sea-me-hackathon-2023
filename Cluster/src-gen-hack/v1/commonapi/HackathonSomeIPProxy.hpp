@@ -61,9 +61,9 @@ public:
 
     virtual std::future<CommonAPI::CallStatus> rpmAsync(const int32_t &_value, RpmAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
-    virtual void button(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info);
+    virtual void order(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info);
 
-    virtual std::future<CommonAPI::CallStatus> buttonAsync(const int32_t &_value, ButtonAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual std::future<CommonAPI::CallStatus> orderAsync(const int32_t &_value, OrderAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
     virtual void getOwnVersion(uint16_t &_major, uint16_t &_minor) const;
 

@@ -14,7 +14,7 @@ void Order::adjustOrder(int clicknum)
     std::cout << "Click : " << clicknum << std::endl;
     CommonAPI::CallStatus callStatus;
     int result;
-    myProxy->button(clicknum, callStatus, result);
+    myProxy->order(clicknum, callStatus, result);
     std::cout << "Button: '" << result << "'\n";
     emit orderChanged(clicknum);
 }

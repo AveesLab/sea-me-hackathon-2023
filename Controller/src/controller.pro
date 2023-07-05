@@ -67,10 +67,3 @@ HEADERS += \
     Accel.h \
     Order.h
 
-DISTFILES += \
-    image/off.png \
-    image/on.png \
-    image/warn.png \
-    image/warn1.png \
-    image/weather.png \
-    image/weather1.png

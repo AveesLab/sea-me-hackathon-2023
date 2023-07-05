@@ -13,11 +13,11 @@ void HackathonStubImpl::accel(const std::shared_ptr<CommonAPI::ClientId> _client
 
 };
 
-void HackathonStubImpl::button(const std::shared_ptr<CommonAPI::ClientId> _client,
-    int _value, buttonReply_t _reply) {
+void HackathonStubImpl::order(const std::shared_ptr<CommonAPI::ClientId> _client,
+    int _value, orderReply_t _reply) {
         int result = _value;
-        std::cout << "button(" << _value << "): '" << result << "'\n";
-        emit valueButton(result); // Emit the signal with the result
+        std::cout << "order(" << _value << "): '" << result << "'\n";
+        emit valueOrder(result); // Emit the signal with the result
 
     _reply(result);
 

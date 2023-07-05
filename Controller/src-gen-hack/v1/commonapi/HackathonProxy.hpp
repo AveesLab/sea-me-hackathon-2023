@@ -111,7 +111,7 @@ public:
      */
     virtual std::future<CommonAPI::CallStatus> rpmAsync(const int32_t &_value, RpmAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
     /**
-     * Calls button with synchronous semantics.
+     * Calls order with synchronous semantics.
      *
      * All const parameters are input parameters to this method.
      * All non-const parameters will be filled with the returned values.
@@ -119,9 +119,9 @@ public:
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void button(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void order(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr);
     /**
-     * Calls button with asynchronous semantics.
+     * Calls order with asynchronous semantics.
      *
      * The provided callback will be called when the reply to this call arrives or
      * an error occurs during the call. The CallStatus will indicate either "SUCCESS"
@@ -130,7 +130,7 @@ public:
      * The std::future returned by this method will be fulfilled at arrival of the reply.
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
-    virtual std::future<CommonAPI::CallStatus> buttonAsync(const int32_t &_value, ButtonAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> orderAsync(const int32_t &_value, OrderAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
 
 
 
@@ -173,13 +173,13 @@ std::future<CommonAPI::CallStatus> HackathonProxy<_AttributeExtensions...>::rpmA
     return delegate_->rpmAsync(_value, _callback, _info);
 }
 template <typename ... _AttributeExtensions>
-void HackathonProxy<_AttributeExtensions...>::button(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info) {
-    delegate_->button(_value, _internalCallStatus, _result, _info);
+void HackathonProxy<_AttributeExtensions...>::order(int32_t _value, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info) {
+    delegate_->order(_value, _internalCallStatus, _result, _info);
 }
 
 template <typename ... _AttributeExtensions>
-std::future<CommonAPI::CallStatus> HackathonProxy<_AttributeExtensions...>::buttonAsync(const int32_t &_value, ButtonAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    return delegate_->buttonAsync(_value, _callback, _info);
+std::future<CommonAPI::CallStatus> HackathonProxy<_AttributeExtensions...>::orderAsync(const int32_t &_value, OrderAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->orderAsync(_value, _callback, _info);
 }
 
 template <typename ... _AttributeExtensions>
