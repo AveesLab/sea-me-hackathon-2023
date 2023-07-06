@@ -60,7 +60,7 @@ You should set Memory and Processors in recommended range<br>
 
 
 
-#### windows settings for vsomeip communication (WIN10)
+#### windows settings for VMware WIFI (WIN10)
 
 
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/39679920-dbbe-410c-9efb-f930d1135a5c" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Untitled"></img><br><br>
@@ -95,7 +95,7 @@ You should set Memory and Processors in recommended range<br>
 ### Ubuntu Settings
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/6c2d604b-f0cb-44f7-a162-0f96415d8583" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="wifiubuntuset1"></img><br><br>
 
-
+### Network Adapter (Custom: VMnet0)
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img><br><br>
 
 
