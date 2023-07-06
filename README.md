@@ -1,7 +1,7 @@
 # sea-me-hackathon-2023
 
 ## Contents
-- [VMware Workstation17](#step-1)
+- [Step 1](#VMware Workstation17)
 - [Step 2](#step-2)
 - [Step 3](#step-3)
 ---
