@@ -2,7 +2,7 @@
 # sea-me-hackathon-2023
 
 ## Contents
-- [Step 1 : Install Ubuntu image on VMware](#Step1:VMwareWorkstation17)
+- [Step 1 : Install Ubuntu image on VMware](#Step1:-VMwareWorkstation17)
 - [Step 2 : Windows settings for VMware WIFI](#windows-settings-for-VMware-WIFI)
 - [Step 3](#step-3)
 ---
@@ -10,7 +10,7 @@
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
 ## Install Ubuntu image on VMware
-### Step1:VMwareWorkstation17
+### Step1: VMwareWorkstation17
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
