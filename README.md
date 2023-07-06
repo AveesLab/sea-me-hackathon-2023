@@ -6,10 +6,6 @@ This project provides a set Ubuntu image file. Therefore, you need to install VM
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 
 
-### download ubuntu iso
-[https://ubuntu.com/download/desktop
-](https://releases.ubuntu.com/focal/)https://releases.ubuntu.com/focal/
-
 
 
 
