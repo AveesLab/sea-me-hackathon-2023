@@ -33,7 +33,7 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<
 
 username : avees
 
-password : nvidia<br><br>
+password : nvidia<br><br><br><br>
 
 
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/705c89d8-ad3f-4709-a8e2-b615046d4782" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage3"></img>
