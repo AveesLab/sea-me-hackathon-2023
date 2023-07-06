@@ -87,8 +87,17 @@ password : nvidia
 
 
 
-#### VMnet0 Bridged check (Automatic)
+#### VMnet0 Bridged check (Automatic Check -> Apply -> OK)
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/72f990b8-08ca-45d4-af25-d527a5484636" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="bridge"></img>
+
+
+### Ubuntu Settings
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/6c2d604b-f0cb-44f7-a162-0f96415d8583" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="wifiubuntuset1"></img>
+
+
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img>
+
+
 
 
 #### network ping check
