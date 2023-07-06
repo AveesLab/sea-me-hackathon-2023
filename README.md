@@ -49,9 +49,10 @@ You should set Memory and Processors in recommended range<br>
 
 #### login ubuntu
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/de8ff45e-6300-46a9-ac82-1b571c5e6356" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="login"></img><br><br>
+*WIN10*
 
-
-## windows settings for VMware WIFI
+## windows settings for VMware WIFI<br>
+*Based on win10*
 
 
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/39679920-dbbe-410c-9efb-f930d1135a5c" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Untitled"></img><br><br>
