@@ -15,6 +15,11 @@ This project provides a set Ubuntu image file. Therefore, you need to install VM
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
 
+### download set Ubuntu image file<br><br>
+
+https://www.~~~~~~~~~<br><Br>
+
+
 #### install Ubuntu
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/103899b6-ddb3-4683-a5bd-52689cf37e62" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install_ubuntu"></img><br><br>
 
@@ -107,4 +112,4 @@ ifconfig -a
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
 
 
-
+If you've finished, please refer to the README of the cluster and controller
