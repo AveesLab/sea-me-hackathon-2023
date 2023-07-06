@@ -1,8 +1,8 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.2
-import com.yourcompany.accel 1.0
-import com.yourcompany.order 1.0
-import com.yourcompany.rpm 1.0
+import com.seame.Speed 1.0
+import com.seame.Buttons 1.0
+import com.seame.RPM 1.0
 
 ApplicationWindow {
     visible: true
@@ -10,23 +10,22 @@ ApplicationWindow {
     height: 960
     title: qsTr("Controller")
 
-    property int clickedButton: 0
-    property int clickedimgButton: 0
+    property string clickedButton: "P"
 
-    Accel {
-        id: accel
+    Speed {
+        id: speed
     }
 
-    Order {
-        id: order
+    Buttons {
+        id: buttons
     }
 
-    Rpm {
+    RPM {
         id: rpm
     }
 
     Slider {
-        id: scrollBar
+        id: speedBar
         width: 631
         height: 219
         rotation: 270
@@ -37,7 +36,7 @@ ApplicationWindow {
         value: 0
 
         onValueChanged: {
-            accel.adjustAccelSize(scrollBar.value);
+            speed.adjustSpeed(speedBar.value);
         }
 
         anchors.centerIn: parent
@@ -55,7 +54,7 @@ ApplicationWindow {
         value: 0
 
         onValueChanged: {
-            rpm.adjustRpmSize(rpmBar.value);
+            rpm.adjustRPM(rpmBar.value);
         }
 
         anchors.centerIn: parent
@@ -67,11 +66,11 @@ ApplicationWindow {
         spacing: 10
 
         Button {
-            id: orderButton0
+            id: buttonP
             text: "P"
             onClicked: {
-                order.adjustOrder(0);
-                clickedButton = 0;
+                buttons.adjustButtons("P");
+                clickedButton = "P";
             }
             width: 100
             height: 100
@@ -84,8 +83,8 @@ ApplicationWindow {
                 }
             }
             contentItem: Text {
-                text: orderButton0.text
-                color: clickedButton === 0 ? "red" : "white"
+                text: buttonP.text
+                color: clickedButton === "P" ? "red" : "white"
                 font.pointSize: 40
                 font.bold: true
                 horizontalAlignment: Text.AlignHCenter
@@ -94,11 +93,11 @@ ApplicationWindow {
         }
 
         Button {
-            id: orderButton1
+            id: buttonR
             text: "R"
             onClicked: {
-                order.adjustOrder(1);
-                clickedButton = 1;
+                buttons.adjustButtons("R");
+                clickedButton = "R";
             }
             width: 100
             height: 100
@@ -111,8 +110,8 @@ ApplicationWindow {
                 }
             }
             contentItem: Text {
-                text: orderButton1.text
-                color: clickedButton === 1 ? "red" : "white"
+                text: buttonR.text
+                color: clickedButton === "R" ? "red" : "white"
                 font.pointSize: 40
                 font.bold: true
                 horizontalAlignment: Text.AlignHCenter
@@ -121,11 +120,11 @@ ApplicationWindow {
         }
 
         Button {
-            id: orderButton2
+            id: buttonN
             text: "N"
             onClicked: {
-                order.adjustOrder(2);
-                clickedButton = 2;
+                buttons.adjustButtons("N");
+                clickedButton = "N";
             }
             width: 100
             height: 100
@@ -138,8 +137,8 @@ ApplicationWindow {
                 }
             }
             contentItem: Text {
-                text: orderButton2.text
-                color: clickedButton === 2 ? "red" : "white"
+                text: buttonN.text
+                color: clickedButton === "N" ? "red" : "white"
                 font.bold: true
                 font.pointSize: 40
                 horizontalAlignment: Text.AlignHCenter
@@ -148,11 +147,11 @@ ApplicationWindow {
         }
 
         Button {
-            id: orderButton3
+            id: buttonD
             text: "D"
             onClicked: {
-                order.adjustOrder(3);
-                clickedButton = 3;
+                buttons.adjustButtons("D");
+                clickedButton = "D";
             }
             width: 100
             height: 100
@@ -165,8 +164,8 @@ ApplicationWindow {
                 }
             }
             contentItem: Text {
-                text: orderButton3.text
-                color: clickedButton === 3 ? "red" : "white"
+                text: buttonD.text
+                color: clickedButton === "D" ? "red" : "white"
                 font.bold: true
                 font.pointSize: 40
                 horizontalAlignment: Text.AlignHCenter
@@ -175,13 +174,13 @@ ApplicationWindow {
         }
     }
     Button {
-        id: weatherButton
+        id: buttonWeather
         property bool isToggled: false
         x: 354
         y: 826 // Add this line
 
         onClicked: {
-            order.adjustOrder(4);
+            buttons.adjustButtons("Weather");
             isToggled = !isToggled; // This line toggles the state
         }
         width: 100
@@ -191,7 +190,7 @@ ApplicationWindow {
             id: weatherImage
             width: 100
             height: 100
-            source: weatherButton.isToggled ? "image/weather1.png" : "image/weather.png" // Use the state here
+            source: buttonWeather.isToggled ? "image/weather1.png" : "image/weather.png" // Use the state here
         }
 
         background: Rectangle {
@@ -199,13 +198,13 @@ ApplicationWindow {
         }
     }
     Button {
-        id: warnButton
+        id: buttonWarn
         property bool isToggled: false
         x: 590
         y: 826 // Add this line
 
         onClicked: {
-            order.adjustOrder(5);
+            buttons.adjustButtons("Warn");
             isToggled = !isToggled; // This line toggles the state
         }
         width: 100
@@ -215,7 +214,7 @@ ApplicationWindow {
             id: warnImage
             width: 100
             height: 100
-            source: warnButton.isToggled ? "image/warn.png" : "image/warn1.png" // Use the state here
+            source: buttonWarn.isToggled ? "image/warn.png" : "image/warn1.png" // Use the state here
         }
 
         background: Rectangle {
@@ -223,13 +222,13 @@ ApplicationWindow {
         }
     }
     Button {
-        id: starButton
+        id: buttonLight
         property bool isToggled: false
         x: 771
         y: 816 // Add this line
 
         onClicked: {
-            order.adjustOrder(6);
+            buttons.adjustButtons("Light");
             isToggled = !isToggled; // This line toggles the state
         }
         width: 200
@@ -239,7 +238,7 @@ ApplicationWindow {
             id: starImage
             width: 100
             height: 100
-            source: starButton.isToggled ? "image/on.png" : "image/off.png" // Use the state here
+            source: buttonLight.isToggled ? "image/on.png" : "image/off.png" // Use the state here
         }
 
         background: Rectangle {

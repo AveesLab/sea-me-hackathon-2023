@@ -2,12 +2,12 @@
 #include <string>
 #include <unistd.h>
 #include <CommonAPI/CommonAPI.hpp>
-#include <v1/commonapi/HackathonProxy.hpp>
+#include <v1/commonapi/ClusterProxy.hpp>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include "Accel.h"
-#include "Order.h"
-#include "Rpm.h"
+#include "Speed.h"
+#include "Buttons.h"
+#include "RPM.h"
 #include <qqml.h>
 
 using namespace v1_0::commonapi;
@@ -19,17 +19,13 @@ int main(int argc, char *argv[]) {
 
     QQmlApplicationEngine engine;
 
-    qmlRegisterType<Accel>("com.yourcompany.accel", 1, 0, "Accel");
-    qmlRegisterType<Order>("com.yourcompany.order", 1, 0, "Order");
-    qmlRegisterType<Rpm>("com.yourcompany.rpm", 1, 0, "Rpm");
+    qmlRegisterType<Speed>("com.seame.Speed", 1, 0, "Speed");
+    qmlRegisterType<Buttons>("com.seame.Buttons", 1, 0, "Buttons");
+    qmlRegisterType<RPM>("com.seame.RPM", 1, 0, "RPM");
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
-
-
-
-
 
     return app.exec();
 }

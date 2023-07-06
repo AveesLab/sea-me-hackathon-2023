@@ -1,8 +1,5 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.2
-import com.yourcompany.acceloutput 1.0
-import com.yourcompany.orderoutput 1.0
-import com.yourcompany.rpmoutput 1.0
 import "."
 import QtMultimedia 5.5
 
@@ -11,10 +8,10 @@ ApplicationWindow {
     width: screen.width
     height: screen.height
     property alias gearImage: gearImage
-    property int bState: 0
+    property string bState: "P"
     property bool showWeather: false
     property bool showWarn: false
-    property bool showStar: false
+    property bool showLight: false
     title: qsTr("Speedometer")
 
     // Background Image
@@ -25,7 +22,7 @@ ApplicationWindow {
     }
     // Arc Image
     Image {
-        id: arcImage
+        id: speedImage
         width: 590
         height: 590
         anchors.verticalCenterOffset: -175
@@ -94,7 +91,7 @@ ApplicationWindow {
         anchors.horizontalCenterOffset: -548
         anchors.centerIn: parent
         source: "image/star.png"
-        visible: showStar
+        visible: showLight
     }
 
     Text {
@@ -112,7 +109,7 @@ ApplicationWindow {
     }
 
     Canvas {
-        id: canvas
+        id: speedpointer
         width: parent.width
         height: parent.height
         anchors.verticalCenterOffset: -170
@@ -128,7 +125,7 @@ ApplicationWindow {
             ctx.clearRect(0, 0, width, height);
 
             // Draw the speed bar
-            var angle = (accelOutput.accelValue - 35) * Math.PI / 180; // Use the dialValue from accelOutput
+            var angle = (speedReceiver.speedValue * 2.5 - 35) * Math.PI / 180; // Use the dialValue from accelOutput
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(centerX + 160 * Math.cos(angle), centerY + 160 * Math.sin(angle));
@@ -138,15 +135,15 @@ ApplicationWindow {
         }
 
         Connections {
-            target: accelOutput
-            onAccelValueChanged: {
-                canvas.requestPaint()
+            target: speedReceiver
+            onSpeedValueChanged: {
+                speedpointer.requestPaint()
             }
         }
     }
 
     Canvas {
-        id: canvas1
+        id: rpmpointer
         width: parent.width
         height: parent.height
         anchors.verticalCenterOffset: -185
@@ -162,7 +159,7 @@ ApplicationWindow {
             ctx.clearRect(0, 0, width, height);
 
             // Draw the speed bar
-            var angle = (rpmOutput.rpmValue - 45) * Math.PI / 180;
+            var angle = (rpmReceiver.rpmValue * 2.7 - 45) * Math.PI / 180;
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(centerX + 135 * Math.cos(angle), centerY + 135 * Math.sin(angle));
@@ -172,9 +169,9 @@ ApplicationWindow {
         }
 
         Connections {
-            target: rpmOutput
+            target: rpmReceiver
             onRpmValueChanged: {
-                canvas1.requestPaint()
+                rpmpointer.requestPaint()
             }
         }
     }
@@ -221,23 +218,25 @@ ApplicationWindow {
         }
 
         Connections {
-            target: orderOutput
-            onOrderValueChanged: {
-                if (orderOutput.orderValue >= 0 && orderOutput.orderValue <= 3) {
-                    bState = orderOutput.orderValue;
-                    pText.color = bState === 0 ? 'red' : 'white';
-                    rText.color = bState === 1 ? 'red' : 'white';
-                    nText.color = bState === 2 ? 'red' : 'white';
-                    dText.color = bState === 3 ? 'red' : 'white';
+            target: buttonsReceiver
+            onButtonsValueChanged: {
+                var buttonValue = buttonsReceiver.buttonsValue;
 
-                    gearImage.visible = bState === 0;
-                    videoOutput.visible = bState === 1;
+                if (buttonValue === "P" || buttonValue === "R" || buttonValue === "N" || buttonValue === "D") {
+                    bState = buttonValue;
+                    pText.color = bState === "P" ? 'red' : 'white';
+                    rText.color = bState === "R" ? 'red' : 'white';
+                    nText.color = bState === "N" ? 'red' : 'white';
+                    dText.color = bState === "D" ? 'red' : 'white';
+
+                    gearImage.visible = bState === "P";
+                    videoOutput.visible = bState === "R";
                 }
-                else if(orderOutput.orderValue === 4){
+                else if(buttonValue === "Weather"){
                     showWeather = !showWeather;
                     weatherAPI.requestWeather("Seoul");
                 }
-                else if(orderOutput.orderValue === 5){
+                else if(buttonValue === "Warn"){
                     if (showWarn) {
                         blinkTimer.stop(); // Stop blinking
                         warnIcon.visible = false; // Ensure the icon is hidden
@@ -246,8 +245,8 @@ ApplicationWindow {
                     }
                     showWarn = !showWarn;
                 }
-                else if(orderOutput.orderValue === 6){
-                    showStar = !showStar;
+                else if(buttonValue === "Light"){
+                    showLight = !showLight;
                 }
             }
         }
@@ -263,7 +262,7 @@ ApplicationWindow {
         anchors.horizontalCenterOffset: 1
         anchors.centerIn: parent
         source: "image/volk.png" // Replace with the path to your image
-        visible: bState === 0
+        visible: bState === "P"
     }
 
     Camera {
@@ -280,6 +279,6 @@ ApplicationWindow {
         anchors.horizontalCenter: parent.horizontalCenter // Center the output horizontally
         anchors.verticalCenter: parent.verticalCenter // Center the output vertically
         source: camera
-        visible: bState === 1
+        visible: bState === "R"
     }
 }

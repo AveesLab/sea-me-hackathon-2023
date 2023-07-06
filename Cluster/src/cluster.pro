@@ -12,16 +12,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-INCLUDEPATH += ../src-gen-hack/
+INCLUDEPATH += ../../src-gen-cluster/
 SOURCES += main.cpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPDeployment.cpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPProxy.cpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPStubAdapter.cpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPDeployment.cpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPProxy.cpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPStubAdapter.cpp \
     WeatherAPI.cpp \
-    OrderOutput.cpp \
-    HackathonStubImpl.cpp \
-    AccelOutput.cpp \
-    RpmOutput.cpp
+    ClusterStubImpl.cpp \
+    ButtonsReceiver.cpp \
+    SpeedReceiver.cpp \
+    RPMReceiver.cpp
 
 RESOURCES += qml.qrc
 
@@ -58,16 +58,16 @@ INCLUDEPATH += $$PWD/../../../build-commonapi/vsomeip/interface
 DEPENDPATH += $$PWD/../../../build-commonapi/vsomeip/interface
 
 HEADERS += \
-    ../src-gen-hack/v1/commonapi/Hackathon.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonProxy.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonProxyBase.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPDeployment.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPProxy.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonSomeIPStubAdapter.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonStub.hpp \
-    ../src-gen-hack/v1/commonapi/HackathonStubDefault.hpp \
+    ../../src-gen-cluster/v1/commonapi/Cluster.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterProxy.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterProxyBase.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPDeployment.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPProxy.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterSomeIPStubAdapter.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterStub.hpp \
+    ../../src-gen-cluster/v1/commonapi/ClusterStubDefault.hpp \
     WeatherAPI.h \
-    OrderOutput.h \
-    HackathonStubImpl.hpp \
-    AccelOutput.h \
-    RpmOutput.h
+    ClusterStubImpl.hpp \
+    ButtonsReceiver.h \
+    RPMReceiver.h \
+    SpeedReceiver.h

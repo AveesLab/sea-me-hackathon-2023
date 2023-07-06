@@ -1,0 +1,29 @@
+package commonapi
+
+interface Cluster {
+  version {major 1 minor 0}
+  method updateSpeed {
+    in {
+      Int32 accel
+    }
+    out {
+      Int32 speed
+    }
+  }
+  method updateRPM {
+    in {
+      Int32 throttle
+    }
+    out {
+      Int32 rpm
+    }
+  }
+  method clickButtons {
+    in {
+      String command
+    }
+    out {
+      String status
+    }
+  }
+}
