@@ -71,9 +71,10 @@ password : nvidia
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/7479d59d-bb6d-4602-9413-971ea376a2ea" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="vmware_wifi1"></img>
 
 
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/71b66e42-8dcb-4268-bbea-73c0bb558753" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="winwifiset1"></img>
 
 
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/1f48f29a-3587-43b9-ab14-a6750bddaa7a" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ethernet"></img>
+
 
 
 #### VMware settings (Edit -> Virtual Network Editor)
