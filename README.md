@@ -238,7 +238,7 @@ mkdir src && cd src
 mkdir build
 cd build
 cmake ..
-make
+make -jx
 </code>
 </pre>
 
