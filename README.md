@@ -80,8 +80,11 @@ password : nvidia
 #### VMware settings (Edit -> Virtual Network Editor)
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/56a925ee-be6a-406d-b937-520cba8535a9" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="vmware1"></img>
 
+
+
 #### change settings
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/ba7405eb-5967-46ec-a8d1-7c9d3b8c97c3" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="change settings"></img>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/20d9b8b8-20c1-4081-b732-6a15680edec6" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="virtualneteditor"></img>
+
 
 
 #### VMnet0 Bridged check (Automatic)
