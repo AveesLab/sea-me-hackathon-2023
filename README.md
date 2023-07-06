@@ -131,7 +131,7 @@ sudo apt update
 sudo apt install openjdk-8-jdk
 
 java -version
-//1.8.0_xxx 확인
+//check version 1.8.0_xxx 
 </code>
 </pre>
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/61b5d906-0877-4a36-b949-08d3d99a72a4" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="java_version"></img>
