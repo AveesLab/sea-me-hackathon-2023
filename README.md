@@ -9,7 +9,7 @@
 
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
-## install Ubuntu image on VMware
+## install%20Ubuntu%20image%20on%20VMwar
 ### VMwareWorkstation17
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br><br><br>
