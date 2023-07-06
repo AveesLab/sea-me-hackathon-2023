@@ -12,7 +12,7 @@ This project provides a set Ubuntu image file. Therefore, you need to install VM
 ## Install Ubuntu image on VMware
 ### VMwareWorkstation17
 
-https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br><br><br>
+https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
 
 
