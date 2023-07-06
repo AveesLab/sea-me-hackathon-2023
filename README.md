@@ -10,23 +10,23 @@
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
 ## Install Ubuntu image on VMware
-### <VMwareWorkstation17>
+### VMwareWorkstation17
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
 
-#### <install Ubuntu>
+#### install Ubuntu
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/103899b6-ddb3-4683-a5bd-52689cf37e62" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install_ubuntu"></img><br><br>
 
 
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/7eccbd12-e5b6-47f4-a89f-5bd6cfd712ad" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage1"></img><br><br>
 
 
-#### <install iso file>
+#### install iso file
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/14af5302-b502-448e-a278-a33c94ff9213" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage2"></img><br><br>
 
 
-#### <personalize Linux>
+#### personalize Linux
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/99b9f72b-0b7c-4be0-9115-05fb0c717fdb" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install4"></img>
 
 
@@ -38,16 +38,16 @@ password : nvidia<br><br><br><br>
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/705c89d8-ad3f-4709-a8e2-b615046d4782" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage3"></img><br><br>
 
 
-#### <hardware setup>
+#### hardware setup
 You should set Memory and Processors in recommended range<br>
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/0c0147a9-ae4c-493f-81a0-3fe76e7251b3" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install_ram"></img><br><br>
 
 
-#### <power on>
+#### power on
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/ba02f129-df3d-4936-aba5-88c37c553112" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="power on"></img><br><br>
 
 
-#### <login ubuntu>
+#### login ubuntu
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/de8ff45e-6300-46a9-ac82-1b571c5e6356" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="login"></img><br><br>
 
 
