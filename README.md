@@ -20,9 +20,10 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/7eccbd12-e5b6-47f4-a89f-5bd6cfd712ad" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage1"></img>
 
 
-
 #### install iso file
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/0c3111cc-ac20-4564-b61b-ee3d1b6e988b" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install3"></img>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/14af5302-b502-448e-a278-a33c94ff9213" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage2"></img>
+
+
 
 
 
