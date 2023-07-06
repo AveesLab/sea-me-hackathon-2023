@@ -102,6 +102,7 @@ You should set Memory and Processors in recommended range<br>
 
 
 #### network ping check
+If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
 <pre>
 <code>
 ifconfig -a
