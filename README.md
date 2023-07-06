@@ -3,7 +3,7 @@
 
 ## Contents
 - [Step 1 : Install Ubuntu image on VMware](#VMwareWorkstation17)
-- [Step 2 : Windows settings for VMware WIFI](#windows%20settings%20for%20VMware%20WIFI (WIN10))
+- [Step 2 : Windows settings for VMware WIFI](#windows-settings-for-VMware-WIFI-(WIN10))
 - [Step 3](#step-3)
 ---
 
