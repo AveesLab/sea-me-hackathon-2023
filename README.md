@@ -1,6 +1,8 @@
 # sea-me-hackathon-2023
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
+&bull;
+
 ### VMware Workstation17
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br><br><br>
