@@ -1,7 +1,8 @@
 # sea-me-hackathon-2023
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
-&bull;
+&bull;<br>
+
 <i class="fas fa-circle"></i> 항목 1
 
 ### VMware Workstation17
