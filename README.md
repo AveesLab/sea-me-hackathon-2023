@@ -83,6 +83,9 @@ You should set Memory and Processors in recommended range<br>
 ### Network Adapter (Custom: VMnet0)
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img><br><br>
 
+### Network Connect
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/7ecbe022-a8f9-4e7b-b5d3-b8f3e00032ab" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="networkconnect"></img><br><br>
+
 
 ### network ping check
 If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
