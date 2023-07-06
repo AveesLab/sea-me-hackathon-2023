@@ -2,7 +2,7 @@
 # sea-me-hackathon-2023
 
 ## Contents
-- [Step 1 : Install Ubuntu image on VMware](#download&20VMwareWorkstation17)
+- [Step 1 : Install Ubuntu image on VMware](#VMwareWorkstation17)
 - [Step 2](#step-2)
 - [Step 3](#step-3)
 ---
@@ -10,7 +10,7 @@
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
 ## Install Ubuntu image on VMware
-### download VMwareWorkstation17
+### VMwareWorkstation17
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
