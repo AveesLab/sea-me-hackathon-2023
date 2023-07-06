@@ -122,7 +122,8 @@ ifconfig -a
 
 
 * * *
-## commonapi, vsomeip settings
+# commonapi, vsomeip settings
+follow the instructions below for setting up commonapi and vsomeip libraries<br><br>
 
 
 #### Install OpenJDK Java 8
