@@ -112,4 +112,4 @@ ifconfig -a
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
 
 
-If you've finished, please refer to the README of the cluster and controller
+**If you've finished, please refer to the README of the cluster and controller**
