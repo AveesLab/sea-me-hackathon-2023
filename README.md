@@ -101,7 +101,7 @@ You should set Memory and Processors in recommended range<br>
 
 
 
-#### network ping check
+### network ping check
 If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
 If ping transmission between the two devices is successful, preparations for vsomeip communication are completed.<br>
 <pre>
@@ -113,11 +113,11 @@ ifconfig -a
   <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/ebf358fd-5c51-41a5-ad92-6976392c2d01" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig-a"></img>
 
 
-#### ping to TX2
+### ping to TX2
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img>
 
 
-#### ping to laptop VMware
+### ping to laptop VMware
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img>
 
 
