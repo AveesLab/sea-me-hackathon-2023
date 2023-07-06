@@ -47,11 +47,8 @@ int main(int argc, char *argv[])
     QObject::connect(&(*myService), &HackathonStubImpl::valueOrder, &orderOutput, &OrderOutput::adjustOrderValue); // Connect the instances
     QObject::connect(&(*myService), &HackathonStubImpl::valueRpm, &rpmOutput, &RpmOutput::adjustRpmValue); // Connect the instances
 
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    if (engine.rootObjects().isEmpty())
+        return -1;
     return app.exec();
 }
