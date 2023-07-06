@@ -1,7 +1,7 @@
 # sea-me-hackathon-2023
 
 ## Contents
-- [Step 1 : Install Ubuntu image on VMware](#install Ubuntu image on VMware)
+- [Step 1 : Install Ubuntu image on VMware](#install%20Ubuntu%20image%20on%20VMware)
 - [Step 2](#step-2)
 - [Step 3](#step-3)
 ---
