@@ -103,6 +103,7 @@ You should set Memory and Processors in recommended range<br>
 
 #### network ping check
 If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
+If ping transmission between the two devices is successful, preparations for vsomeip communication are completed.<br><br>
 <pre>
 <code>
 //check your device's IP address
