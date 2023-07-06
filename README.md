@@ -88,7 +88,7 @@ You should set Memory and Processors in recommended range<br>
 
 
 
-#### VMnet0 Bridged check (set VMnet0 Bridged(automatic) -> apply -> OK)
+#### VMnet0 Bridged check (set VMnet0 Bridged(Automatic) -> Apply -> OK)
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/72f990b8-08ca-45d4-af25-d527a5484636" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="bridge"></img><br><br>
 
 
