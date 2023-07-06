@@ -96,14 +96,14 @@ You should set Memory and Processors in recommended range<br>
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/6c2d604b-f0cb-44f7-a162-0f96415d8583" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="wifiubuntuset1"></img><br><br>
 
 ### Network Adapter (Custom: VMnet0)
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img><br><br>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img><br><br><br>
 
 
 
 
 #### network ping check
 If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
-If ping transmission between the two devices is successful, preparations for vsomeip communication are completed.<br><br>
+If ping transmission between the two devices is successful, preparations for vsomeip communication are completed.<br>
 <pre>
 <code>
 //check your device's IP address
