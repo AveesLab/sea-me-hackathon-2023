@@ -42,8 +42,8 @@ password : nvidia<br><br><br><br>
 <img src="" width="70%" height="50%" title="px(픽셀) 크기 설정" alt=""></img><br><br><br><br>
 
 
-#### hardware setup (in recommended range)
-
+#### hardware setup
+//You should set Memory and Processors in recommended range
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/0c0147a9-ae4c-493f-81a0-3fe76e7251b3" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install_ram"></img><br><br><br><br>
 
 
