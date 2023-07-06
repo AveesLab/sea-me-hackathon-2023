@@ -49,7 +49,8 @@ You should set Memory and Processors in recommended range<br>
 
 
 #### power on
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/bbfb8164-9f42-4b61-a2a6-f8de4547a3e9" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="power_on"></img><br><br><br><br>
+<img src="[power on](https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/ba02f129-df3d-4936-aba5-88c37c553112)" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="power on"></img><br><br><br><br>
+
 
 
 
