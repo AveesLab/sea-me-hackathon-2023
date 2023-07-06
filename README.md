@@ -124,6 +124,7 @@ ifconfig -a
 * * *
 # commonapi, vsomeip settings
 follow the instructions below for setting up commonapi and vsomeip libraries<br><br>
+In the make-jx command, 'x' is the number of processes on your device.
 
 
 #### Install OpenJDK Java 8
@@ -154,7 +155,7 @@ git checkout 3.2.0
 mkdir build
 cd build
 cmake ..
-make -j2
+make -jx
 </code>
 </pre>
 ###### result
