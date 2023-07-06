@@ -3,7 +3,6 @@ This project provides a set Ubuntu image file. Therefore, you need to install VM
 
 &bull;<br>
 
-<i class="fas fa-circle"></i> 항목 1
 
 ### VMware Workstation17
 
