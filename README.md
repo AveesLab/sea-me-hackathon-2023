@@ -11,7 +11,7 @@ During this hackathon, your mission is to develop a new digital instrument clust
 - [Step 6: Install Qt](#step-6-install-qt)
 - [Step 7: Execute Cluster & Controller](#step-7-Execute-Cluster-and-Controller)
 ---
-<br><br>
+<br>
 
 # CommonAPI vSomeIP QT Setup 
 If you have your own Ubuntu PC and don't want to use VMware, follow the steps below.<br>
