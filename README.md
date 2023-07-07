@@ -39,8 +39,8 @@ https://www.~~~~~~~~~<br><Br>
 
 
 #### login ubuntu
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/de8ff45e-6300-46a9-ac82-1b571c5e6356" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="login"></img><br><br>
-*WIN10*
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/e9c8c0f1-467c-4f11-9fb9-2540b657dae0" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="login"></img><br><br>
+
 
 ## windows settings for VMware WIFI<br>
 *Based on win10*
