@@ -17,6 +17,6 @@ void ScrollAdjuster::adjustDataSize(int scrollValue)
     CommonAPI::CallStatus callStatus;
         int result;
         myProxy->multiply(scrollValue, callStatus, result);
-        std::cout << "Got result: '" << result << "'\n";
+        std::cout << "Check error: '" << result << "'\n";
     emit dataSizeChanged(scrollValue);
 }
