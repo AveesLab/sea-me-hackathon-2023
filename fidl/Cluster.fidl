@@ -4,18 +4,18 @@ interface Cluster {
   version {major 1 minor 0}
   method updateSpeed {
     in {
-      Int32 accel
+      Int32 speed
     }
     out {
-      Int32 speed
+      Int32 status
     }
   }
   method updateRPM {
     in {
-      Int32 throttle
+      Int32 rpm
     }
     out {
-      Int32 rpm
+      Int32 status
     }
   }
   method clickButtons {
@@ -23,7 +23,7 @@ interface Cluster {
       String command
     }
     out {
-      String status
+      Int32 status
     }
   }
 }

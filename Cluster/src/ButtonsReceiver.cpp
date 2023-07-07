@@ -4,9 +4,9 @@ ButtonsReceiver::ButtonsReceiver(QObject *parent) : QObject(parent)
 {
 }
 
-void ButtonsReceiver::receiveButtons(std::string signal)
+void ButtonsReceiver::receiveButtons(std::string command)
 {
-    qt_buttons = QString::fromStdString(signal);
+    qt_buttons = QString::fromStdString(command);
     emit buttonsValueChanged();
 }
 

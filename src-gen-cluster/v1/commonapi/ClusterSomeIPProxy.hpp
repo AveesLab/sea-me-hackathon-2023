@@ -53,15 +53,15 @@ public:
 
     virtual ~ClusterSomeIPProxy();
 
-    virtual void updateSpeed(int32_t _accel, CommonAPI::CallStatus &_internalCallStatus, int32_t &_speed, const CommonAPI::CallInfo *_info);
+    virtual void updateSpeed(int32_t _speed, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info);
 
-    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_accel, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_speed, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
-    virtual void updateRPM(int32_t _throttle, CommonAPI::CallStatus &_internalCallStatus, int32_t &_rpm, const CommonAPI::CallInfo *_info);
+    virtual void updateRPM(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info);
 
-    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_throttle, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_rpm, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
-    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, std::string &_status, const CommonAPI::CallInfo *_info);
+    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info);
 
     virtual std::future<CommonAPI::CallStatus> clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 

@@ -4,9 +4,9 @@ RPMReceiver::RPMReceiver(QObject *parent) : QObject(parent)
 {
 }
 
-void RPMReceiver::receiveRPM(int signal)
+void RPMReceiver::receiveRPM(int rpm)
 {
-    qt_rpmValue = signal;
+    qt_rpmValue = rpm;
     emit rpmValueChanged();
 }
 

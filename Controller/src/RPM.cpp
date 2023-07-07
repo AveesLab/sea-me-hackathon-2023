@@ -14,7 +14,7 @@ void RPM::adjustRPM(int scrollValue)
     int result;
     CommonAPI::CallStatus callStatus;
 
-    std::cout << "Throttle(%) : " << scrollValue << std::endl;
+    std::cout << "RPM : " << scrollValue << std::endl;
     myProxy->updateRPM(scrollValue, callStatus, result);
     std::cout << "Check error: '" << result << "'\n";
 }

@@ -88,9 +88,9 @@ class ClusterStub
     : public virtual CommonAPI::Stub<ClusterStubAdapter, ClusterStubRemoteEvent>
 {
 public:
-    typedef std::function<void (int32_t _speed)> updateSpeedReply_t;
-    typedef std::function<void (int32_t _rpm)> updateRPMReply_t;
-    typedef std::function<void (std::string _status)> clickButtonsReply_t;
+    typedef std::function<void (int32_t _status)> updateSpeedReply_t;
+    typedef std::function<void (int32_t _status)> updateRPMReply_t;
+    typedef std::function<void (int32_t _status)> clickButtonsReply_t;
 
     virtual ~ClusterStub() {}
     void lockInterfaceVersionAttribute(bool _lockAccess) { static_cast<void>(_lockAccess); }
@@ -100,9 +100,9 @@ public:
     virtual const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> _client) = 0;
 
     /// This is the method that will be called on remote calls on the method updateSpeed.
-    virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _accel, updateSpeedReply_t _reply) = 0;
+    virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _speed, updateSpeedReply_t _reply) = 0;
     /// This is the method that will be called on remote calls on the method updateRPM.
-    virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _throttle, updateRPMReply_t _reply) = 0;
+    virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _rpm, updateRPMReply_t _reply) = 0;
     /// This is the method that will be called on remote calls on the method clickButtons.
     virtual void clickButtons(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _command, clickButtonsReply_t _reply) = 0;
 

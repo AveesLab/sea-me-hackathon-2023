@@ -72,9 +72,9 @@ public:
     CommonAPI::SomeIP::MethodWithReplyStubDispatcher<
         ::v1::commonapi::ClusterStub,
         std::tuple< std::string>,
-        std::tuple< std::string>,
+        std::tuple< int32_t>,
         std::tuple< CommonAPI::SomeIP::StringDeployment>,
-        std::tuple< CommonAPI::SomeIP::StringDeployment>
+        std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>>
     > clickButtonsStubDispatcher;
     
     ClusterSomeIPStubAdapterInternal(
@@ -108,7 +108,7 @@ public:
             false,
             _stub->hasElement(2),
             std::make_tuple(static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr)),
-            std::make_tuple(static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr)))
+            std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)))
         
     {
         ClusterSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7b) }, &updateSpeedStubDispatcher );

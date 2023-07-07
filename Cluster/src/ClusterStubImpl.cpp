@@ -3,22 +3,22 @@
 ClusterStubImpl::ClusterStubImpl() { }
 ClusterStubImpl::~ClusterStubImpl() { }
 
-void ClusterStubImpl::updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int _accel, updateSpeedReply_t _reply) {
-    std::cout << "accel : " << _accel << " \n";
-    emit signalSpeed(_accel); // Emit the signal
+void ClusterStubImpl::updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int _speed, updateSpeedReply_t _reply) {
+    std::cout << "Speed : " << _speed << " \n";
+    emit signalSpeed(_speed); // Emit the signal
 
-    if (_accel >= 0 && _accel <= 100) {
+    if (0 <= _speed && _speed <= 260) {
         _reply(0);
     } else {
         _reply(-1);
     }
 }
 
-void ClusterStubImpl::updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int _throttle, updateRPMReply_t _reply) {
-     std::cout << "throtle : " << _throttle << " \n";
-     emit signalRPM(_throttle); // Emit the signal
+void ClusterStubImpl::updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int _rpm, updateRPMReply_t _reply) {
+     std::cout << "RPM : " << _rpm << " \n";
+     emit signalRPM(_rpm); // Emit the signal
 
-     if (_throttle >= 0 && _throttle <= 100) {
+     if (0 <= _rpm && _rpm <= 8000) {
          _reply(0);
      } else {
          _reply(-1);
@@ -29,5 +29,5 @@ void ClusterStubImpl::clickButtons(const std::shared_ptr<CommonAPI::ClientId> _c
      std::cout << "command : " << _command << " \n";
      emit signalButtons(_command); // Emit the signal
 
-    _reply(_command);
+    _reply(0);
 }

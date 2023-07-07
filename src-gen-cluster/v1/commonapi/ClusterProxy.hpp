@@ -77,7 +77,7 @@ public:
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void updateSpeed(int32_t _accel, CommonAPI::CallStatus &_internalCallStatus, int32_t &_speed, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void updateSpeed(int32_t _speed, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr);
     /**
      * Calls updateSpeed with asynchronous semantics.
      *
@@ -88,7 +88,7 @@ public:
      * The std::future returned by this method will be fulfilled at arrival of the reply.
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
-    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_accel, UpdateSpeedAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_speed, UpdateSpeedAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
     /**
      * Calls updateRPM with synchronous semantics.
      *
@@ -98,7 +98,7 @@ public:
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void updateRPM(int32_t _throttle, CommonAPI::CallStatus &_internalCallStatus, int32_t &_rpm, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void updateRPM(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr);
     /**
      * Calls updateRPM with asynchronous semantics.
      *
@@ -109,7 +109,7 @@ public:
      * The std::future returned by this method will be fulfilled at arrival of the reply.
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
-    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_throttle, UpdateRPMAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_rpm, UpdateRPMAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
     /**
      * Calls clickButtons with synchronous semantics.
      *
@@ -119,7 +119,7 @@ public:
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, std::string &_status, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr);
     /**
      * Calls clickButtons with asynchronous semantics.
      *
@@ -155,25 +155,25 @@ ClusterProxy<_AttributeExtensions...>::~ClusterProxy() {
 }
 
 template <typename ... _AttributeExtensions>
-void ClusterProxy<_AttributeExtensions...>::updateSpeed(int32_t _accel, CommonAPI::CallStatus &_internalCallStatus, int32_t &_speed, const CommonAPI::CallInfo *_info) {
-    delegate_->updateSpeed(_accel, _internalCallStatus, _speed, _info);
+void ClusterProxy<_AttributeExtensions...>::updateSpeed(int32_t _speed, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
+    delegate_->updateSpeed(_speed, _internalCallStatus, _status, _info);
 }
 
 template <typename ... _AttributeExtensions>
-std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::updateSpeedAsync(const int32_t &_accel, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    return delegate_->updateSpeedAsync(_accel, _callback, _info);
+std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::updateSpeedAsync(const int32_t &_speed, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->updateSpeedAsync(_speed, _callback, _info);
 }
 template <typename ... _AttributeExtensions>
-void ClusterProxy<_AttributeExtensions...>::updateRPM(int32_t _throttle, CommonAPI::CallStatus &_internalCallStatus, int32_t &_rpm, const CommonAPI::CallInfo *_info) {
-    delegate_->updateRPM(_throttle, _internalCallStatus, _rpm, _info);
+void ClusterProxy<_AttributeExtensions...>::updateRPM(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
+    delegate_->updateRPM(_rpm, _internalCallStatus, _status, _info);
 }
 
 template <typename ... _AttributeExtensions>
-std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::updateRPMAsync(const int32_t &_throttle, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    return delegate_->updateRPMAsync(_throttle, _callback, _info);
+std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::updateRPMAsync(const int32_t &_rpm, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->updateRPMAsync(_rpm, _callback, _info);
 }
 template <typename ... _AttributeExtensions>
-void ClusterProxy<_AttributeExtensions...>::clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, std::string &_status, const CommonAPI::CallInfo *_info) {
+void ClusterProxy<_AttributeExtensions...>::clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
     delegate_->clickButtons(_command, _internalCallStatus, _status, _info);
 }
 

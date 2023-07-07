@@ -32,7 +32,7 @@ ApplicationWindow {
         anchors.verticalCenterOffset: -26
         anchors.horizontalCenterOffset: -236
         from: 0
-        to: 100
+        to: 260
         value: 0
 
         onValueChanged: {
@@ -50,7 +50,7 @@ ApplicationWindow {
         anchors.verticalCenterOffset: -26
         anchors.horizontalCenterOffset: 231
         from: 0
-        to: 100
+        to: 8000
         value: 0
 
         onValueChanged: {

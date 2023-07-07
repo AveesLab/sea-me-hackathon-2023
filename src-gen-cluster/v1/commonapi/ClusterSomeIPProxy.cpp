@@ -56,9 +56,9 @@ ClusterSomeIPProxy::~ClusterSomeIPProxy() {
 
 
 
-void ClusterSomeIPProxy::updateSpeed(int32_t _accel, CommonAPI::CallStatus &_internalCallStatus, int32_t &_speed, const CommonAPI::CallInfo *_info) {
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_accel(_accel, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_speed(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+void ClusterSomeIPProxy::updateSpeed(int32_t _speed, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_speed(_speed, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -78,15 +78,15 @@ void ClusterSomeIPProxy::updateSpeed(int32_t _accel, CommonAPI::CallStatus &_int
         false,
         false,
         (_info ? _info : &CommonAPI::SomeIP::defaultCallInfo),
-        deploy_accel,
+        deploy_speed,
         _internalCallStatus,
-        deploy_speed);
-    _speed = deploy_speed.getValue();
+        deploy_status);
+    _status = deploy_status.getValue();
 }
 
-std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateSpeedAsync(const int32_t &_accel, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_accel(_accel, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_speed(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateSpeedAsync(const int32_t &_speed, UpdateSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_speed(_speed, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     return CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -106,17 +106,17 @@ std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateSpeedAsync(const in
         false,
         false,
         (_info ? _info : &CommonAPI::SomeIP::defaultCallInfo),
-        deploy_accel,
-        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > _speed) {
+        deploy_speed,
+        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > _status) {
             if (_callback)
-                _callback(_internalCallStatus, _speed.getValue());
+                _callback(_internalCallStatus, _status.getValue());
         },
-        std::make_tuple(deploy_speed));
+        std::make_tuple(deploy_status));
 }
 
-void ClusterSomeIPProxy::updateRPM(int32_t _throttle, CommonAPI::CallStatus &_internalCallStatus, int32_t &_rpm, const CommonAPI::CallInfo *_info) {
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_throttle(_throttle, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_rpm(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+void ClusterSomeIPProxy::updateRPM(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_rpm(_rpm, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -136,15 +136,15 @@ void ClusterSomeIPProxy::updateRPM(int32_t _throttle, CommonAPI::CallStatus &_in
         false,
         false,
         (_info ? _info : &CommonAPI::SomeIP::defaultCallInfo),
-        deploy_throttle,
+        deploy_rpm,
         _internalCallStatus,
-        deploy_rpm);
-    _rpm = deploy_rpm.getValue();
+        deploy_status);
+    _status = deploy_status.getValue();
 }
 
-std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateRPMAsync(const int32_t &_throttle, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_throttle(_throttle, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
-    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_rpm(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateRPMAsync(const int32_t &_rpm, UpdateRPMAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_rpm(_rpm, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     return CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -164,17 +164,17 @@ std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::updateRPMAsync(const int3
         false,
         false,
         (_info ? _info : &CommonAPI::SomeIP::defaultCallInfo),
-        deploy_throttle,
-        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > _rpm) {
+        deploy_rpm,
+        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > _status) {
             if (_callback)
-                _callback(_internalCallStatus, _rpm.getValue());
+                _callback(_internalCallStatus, _status.getValue());
         },
-        std::make_tuple(deploy_rpm));
+        std::make_tuple(deploy_status));
 }
 
-void ClusterSomeIPProxy::clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, std::string &_status, const CommonAPI::CallInfo *_info) {
+void ClusterSomeIPProxy::clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
     CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deploy_command(_command, static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
-    CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deploy_status(static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -184,8 +184,8 @@ void ClusterSomeIPProxy::clickButtons(std::string _command, CommonAPI::CallStatu
         >,
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
-                std::string,
-                CommonAPI::SomeIP::StringDeployment
+                int32_t,
+                CommonAPI::SomeIP::IntegerDeployment<int32_t>
             >
         >
     >::callMethodWithReply(
@@ -202,7 +202,7 @@ void ClusterSomeIPProxy::clickButtons(std::string _command, CommonAPI::CallStatu
 
 std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
     CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deploy_command(_command, static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
-    CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deploy_status(static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deploy_status(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
     return CommonAPI::SomeIP::ProxyHelper<
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
@@ -212,8 +212,8 @@ std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::clickButtonsAsync(const s
         >,
         CommonAPI::SomeIP::SerializableArguments<
             CommonAPI::Deployable<
-                std::string,
-                CommonAPI::SomeIP::StringDeployment
+                int32_t,
+                CommonAPI::SomeIP::IntegerDeployment<int32_t>
             >
         >
     >::callMethodAsync(
@@ -223,7 +223,7 @@ std::future<CommonAPI::CallStatus> ClusterSomeIPProxy::clickButtonsAsync(const s
         false,
         (_info ? _info : &CommonAPI::SomeIP::defaultCallInfo),
         deploy_command,
-        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment > _status) {
+        [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > _status) {
             if (_callback)
                 _callback(_internalCallStatus, _status.getValue());
         },

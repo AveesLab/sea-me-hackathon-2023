@@ -60,22 +60,22 @@ public:
         return &remoteEventHandler_;
     }
 
-    COMMONAPI_EXPORT virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _accel, updateSpeedReply_t _reply) {
+    COMMONAPI_EXPORT virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _speed, updateSpeedReply_t _reply) {
         (void)_client;
-        (void)_accel;
-        int32_t speed = 0;
-        _reply(speed);
+        (void)_speed;
+        int32_t status = 0;
+        _reply(status);
     }
-    COMMONAPI_EXPORT virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _throttle, updateRPMReply_t _reply) {
+    COMMONAPI_EXPORT virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _rpm, updateRPMReply_t _reply) {
         (void)_client;
-        (void)_throttle;
-        int32_t rpm = 0;
-        _reply(rpm);
+        (void)_rpm;
+        int32_t status = 0;
+        _reply(status);
     }
     COMMONAPI_EXPORT virtual void clickButtons(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _command, clickButtonsReply_t _reply) {
         (void)_client;
         (void)_command;
-        std::string status = "";
+        int32_t status = 0;
         _reply(status);
     }
 

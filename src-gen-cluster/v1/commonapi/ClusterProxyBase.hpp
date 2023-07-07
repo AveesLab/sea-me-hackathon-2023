@@ -39,13 +39,13 @@ public:
 
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> UpdateSpeedAsyncCallback;
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> UpdateRPMAsyncCallback;
-    typedef std::function<void(const CommonAPI::CallStatus&, const std::string&)> ClickButtonsAsyncCallback;
+    typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> ClickButtonsAsyncCallback;
 
-    virtual void updateSpeed(int32_t _accel, CommonAPI::CallStatus &_internalCallStatus, int32_t &_speed, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_accel, UpdateSpeedAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual void updateRPM(int32_t _throttle, CommonAPI::CallStatus &_internalCallStatus, int32_t &_rpm, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_throttle, UpdateRPMAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, std::string &_status, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void updateSpeed(int32_t _speed, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> updateSpeedAsync(const int32_t &_speed, UpdateSpeedAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void updateRPM(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> updateRPMAsync(const int32_t &_rpm, UpdateRPMAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void clickButtons(std::string _command, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
 
     virtual std::future<void> getCompletionFuture() = 0;

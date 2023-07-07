@@ -9,8 +9,8 @@ class ClusterStubImpl: public QObject, public v1_0::commonapi::ClusterStubDefaul
 public:
     ClusterStubImpl();
     virtual ~ClusterStubImpl();
-    virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int _accel, updateSpeedReply_t _reply);
-    virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int _throttle, updateRPMReply_t _reply);
+    virtual void updateSpeed(const std::shared_ptr<CommonAPI::ClientId> _client, int _speed, updateSpeedReply_t _reply);
+    virtual void updateRPM(const std::shared_ptr<CommonAPI::ClientId> _client, int _rpm, updateRPMReply_t _reply);
     virtual void clickButtons(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _command, clickButtonsReply_t _reply);
 signals:
     void signalSpeed(int);

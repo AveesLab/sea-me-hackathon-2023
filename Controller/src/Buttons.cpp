@@ -11,7 +11,7 @@ Buttons::Buttons(QObject *parent) : QObject(parent)
 
 void Buttons::adjustButtons(QString clickedButton)
 {
-    std::string result;
+    int result;
     CommonAPI::CallStatus callStatus;
     std::string clickedButtonStdString = clickedButton.toStdString();
 

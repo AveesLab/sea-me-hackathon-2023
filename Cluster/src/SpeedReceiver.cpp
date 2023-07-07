@@ -4,9 +4,9 @@ SpeedReceiver::SpeedReceiver(QObject *parent) : QObject(parent)
 {
 }
 
-void SpeedReceiver::receiveSpeed(int signal)
+void SpeedReceiver::receiveSpeed(int speed)
 {
-    qt_speedValue = signal;
+    qt_speedValue = speed;
     emit speedValueChanged();
 }
 
