@@ -1,5 +1,5 @@
 
-# SEA:ME@Korea 2023 Summer Hackathon
+# VMware Ubuntu image
 
 ## Contents
 - [Step 1 : Install Ubuntu image on VMware](#Step-1-VMwareWorkstation17)
