@@ -11,12 +11,12 @@ During this hackathon, your mission is to develop a new digital instrument clust
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
 ## Install Ubuntu image on VMware
-### Step 1 VMwareWorkstation17
+### Download and install VMware Workstation 17 Pro for Windows
 
 https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
 
 
-### download set Ubuntu image file<br><br>
+### Download the VMware image for the preconfigured Ubuntu Linux<br><br>
 
 https://kookmin-my.sharepoint.com/:u:/g/personal/whchangjo_kookmin_kr/EV890pDrMZtNjcBFrNockZoBmwziAYeVqXMfHGtj0HieHA?e=0gfxtJ<br><Br>
 
