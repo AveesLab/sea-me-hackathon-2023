@@ -26,6 +26,9 @@ https://www.~~~~~~~~~<br><Br>
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/112ac4ab-1f80-4f7d-a253-0944b7acbcd1" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open2"></img><br><br>
 
 
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/039c50d9-1896-4d89-8bf1-0a698986c950" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open3"></img><br><br>
+
+
 
 #### install iso file
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/14af5302-b502-448e-a278-a33c94ff9213" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage2"></img><br><br>
