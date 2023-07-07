@@ -30,18 +30,6 @@ https://www.~~~~~~~~~<br><Br>
 
 
 
-#### install iso file
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/14af5302-b502-448e-a278-a33c94ff9213" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage2"></img><br><br>
-
-
-#### personalize Linux
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/345fd04e-6d98-47a6-a90f-cb7a0eabc44a" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="seame"></img>
-
-username : sea
-
-password : me<br><br><br><br>
-
-
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/705c89d8-ad3f-4709-a8e2-b615046d4782" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage3"></img><br><br>
 
 
