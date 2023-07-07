@@ -145,7 +145,7 @@ Result:
 [100%] Built target CommonAPI-SomeIP
 ```
 
-Add library path
+#### Add library path
 ```bash
 cd ~
 sudo vi .bashrc
