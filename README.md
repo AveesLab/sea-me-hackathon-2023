@@ -17,7 +17,7 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<
 
 ### download set Ubuntu image file<br><br>
 
-https://www.~~~~~~~~~<br><Br>
+https://kookmin-my.sharepoint.com/:u:/g/personal/whchangjo_kookmin_kr/EV890pDrMZtNjcBFrNockZoBmwziAYeVqXMfHGtj0HieHA?e=0gfxtJ<br><Br>
 
 
 #### open a virtual Ubuntu_Hackathon image
