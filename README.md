@@ -17,6 +17,7 @@ However, if you want to use VMware, click the following below.
 - [Step 7: Execute Cluster & Controller](#step-7-execute-cluster-and-controller)
 ---
 <br>
+
 ## Step 1: Install OpenJDK Java 8
 ```bash
 sudo apt update
