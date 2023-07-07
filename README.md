@@ -34,7 +34,8 @@ https://www.~~~~~~~~~<br><Br>
 
 
 #### power on
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/ba02f129-df3d-4936-aba5-88c37c553112" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="power on"></img><br><br>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/2c37ac84-2347-4c30-9f02-ccdc31232ce0" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open4"></img><br><br>
+
 
 
 #### login ubuntu
