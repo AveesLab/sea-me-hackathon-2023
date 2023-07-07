@@ -2,7 +2,7 @@
 
 During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board. However, you have to bring at least one intel CPU-based (Windows or Ubuntu Linux) laptop as a development environment. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. If you bring a native Ubuntu Linux laptop, that is also okay. Note that since we provide a preconfigured VMware image, using VMware is a little bit more convinient if you are not used to the Linux development environment.
 
-# CommonAPI vSomeIP QT Setup 
+
 If you have your own Ubuntu PC and don't want to use VMware, follow the steps below.<br>
 However, if you want to use VMware, click the following below.
 
@@ -17,6 +17,9 @@ However, if you want to use VMware, click the following below.
 - [Step 7: Execute Cluster & Controller](#step-7-execute-cluster-and-controller)
 ---
 <br>
+
+# CommonAPI vSomeIP QT Setup
+<br/>
 
 ## Step 1: Install OpenJDK Java 8
 ```bash
