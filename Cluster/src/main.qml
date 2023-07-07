@@ -20,7 +20,7 @@ ApplicationWindow {
         anchors.fill: parent
         source: "image/back.png" // Replace with the path to your background image
     }
-    // Arc Image
+    // speed gage
     Image {
         id: speedImage
         width: 590
