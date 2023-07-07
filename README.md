@@ -20,7 +20,7 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<
 https://www.~~~~~~~~~<br><Br>
 
 <img src="" width="70%" height="50%" title="px(픽셀) 크기 설정" alt=""></img><br><br>
-#### install Ubuntu
+#### open a virtual Ubuntu
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/28508cce-357e-49f3-bb37-3ec94c9b6de5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open"></img><br><br>
 
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/112ac4ab-1f80-4f7d-a253-0944b7acbcd1" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open2"></img><br><br>
