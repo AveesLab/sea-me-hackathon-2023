@@ -1,4 +1,4 @@
-# SEA:ME@Korea 2023 Summer Hackathon<br>
+# VMWare Setup<br>
 
 
 ## Contents
