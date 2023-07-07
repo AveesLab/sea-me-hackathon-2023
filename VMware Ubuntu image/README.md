@@ -1,12 +1,5 @@
 # VMware Ubuntu image
-
-
 <br><br>
-
-## Contents
-- [Step 1 : Install Ubuntu image on VMware](#Step-1-VMwareWorkstation17)
-
----
 
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
