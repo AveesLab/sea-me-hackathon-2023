@@ -23,9 +23,8 @@ https://www.~~~~~~~~~<br><Br>
 #### install Ubuntu
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/28508cce-357e-49f3-bb37-3ec94c9b6de5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open"></img><br><br>
 
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/112ac4ab-1f80-4f7d-a253-0944b7acbcd1" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open2"></img><br><br>
 
-
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/7eccbd12-e5b6-47f4-a89f-5bd6cfd712ad" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage1"></img><br><br>
 
 
 #### install iso file
