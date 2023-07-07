@@ -32,12 +32,11 @@ https://www.~~~~~~~~~<br><Br>
 
 
 #### personalize Linux
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/99b9f72b-0b7c-4be0-9115-05fb0c717fdb" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install4"></img>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/345fd04e-6d98-47a6-a90f-cb7a0eabc44a" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="seame"></img>
 
+username : sea
 
-username : avees
-
-password : nvidia<br><br><br><br>
+password : me<br><br><br><br>
 
 
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/705c89d8-ad3f-4709-a8e2-b615046d4782" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage3"></img><br><br>
