@@ -245,12 +245,22 @@ ApplicationWindow {
             color: "transparent"
         }
     }
-    TextEdit {
-        id: textEdit
-        x: 128
-        y: 59
-        width: 80
-        height: 20
-        font.pixelSize: 12
+
+    Text {
+        id: text1
+        x: 350
+        y: 91
+        text: qsTr("Speed")
+        font.bold: true
+        font.pixelSize: 36
+    }
+
+    Text {
+        id: text2
+        x: 831
+        y: 91
+        text: qsTr("RPM")
+        font.bold: true
+        font.pixelSize: 36
     }
 }
