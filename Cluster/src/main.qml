@@ -84,7 +84,7 @@ ApplicationWindow {
         }
     }
     Image {
-        id: starIcon
+        id: LightIcon
         width: 80
         height: 80
         anchors.verticalCenterOffset: -506
@@ -125,7 +125,7 @@ ApplicationWindow {
             ctx.clearRect(0, 0, width, height);
 
             // Draw the speed bar
-            var angle = (speedReceiver.speedValue - 35) * Math.PI / 180; // Use the dialValue from accelOutput
+            var angle = (speedReceiver.speedValue - 35) * Math.PI / 180; // Convert speed to angle
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(centerX + 160 * Math.cos(angle), centerY + 160 * Math.sin(angle));
@@ -159,7 +159,7 @@ ApplicationWindow {
             ctx.clearRect(0, 0, width, height);
 
             // Draw the speed bar
-            var angle = ((rpmReceiver.rpmValue / 30) -45) * Math.PI / 180;
+            var angle = ((rpmReceiver.rpmValue / 30) -45) * Math.PI / 180; // Convert rpm to angle
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(centerX + 135 * Math.cos(angle), centerY + 135 * Math.sin(angle));
