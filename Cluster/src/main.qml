@@ -84,7 +84,7 @@ ApplicationWindow {
         }
     }
     Image {
-        id: LightIcon
+        id: lightIcon
         width: 80
         height: 80
         anchors.verticalCenterOffset: -506
