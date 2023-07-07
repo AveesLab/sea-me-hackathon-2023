@@ -1,6 +1,6 @@
 # SEA:ME@Korea 2023 Summer Hackathon<br>
 
-During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board. However, you have to bring at least one intel CPU-based (Windows or Ubuntu Linux) laptop as a development environment. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. If you bring a native Ubuntu Linux laptop, that is also okay. Note that since we provide a preconfigured VMware images, using VMware is a little bit more convinient if you are not used to the Linux development environment. 
+During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board. However, you have to bring at least one intel CPU-based (Windows or Ubuntu Linux) laptop as a development environment. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. If you bring a native Ubuntu Linux laptop, that is also okay. Note that since we provide a preconfigured VMware image, using VMware is a little bit more convinient if you are not used to the Linux development environment.
 
 ## Contents
 - [Step 1 : Install Ubuntu image on VMware](#Step-1-VMwareWorkstation17)
