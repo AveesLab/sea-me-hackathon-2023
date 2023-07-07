@@ -16,5 +16,5 @@ void Speed::adjustSpeed(int scrollValue)
 
     std::cout << "Accel(%) : " << scrollValue << std::endl;
     myProxy->updateSpeed(scrollValue, callStatus, result);
-    std::cout << "Got result: '" << result << "'\n";
+    std::cout << "Check error: '" << result << "'\n";
 }
