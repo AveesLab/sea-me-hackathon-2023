@@ -3,107 +3,190 @@
 During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board. However, you have to bring at least one intel CPU-based (Windows or Ubuntu Linux) laptop as a development environment. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. If you bring a native Ubuntu Linux laptop, that is also okay. Note that since we provide a preconfigured VMware image, using VMware is a little bit more convinient if you are not used to the Linux development environment.
 
 ## Contents
-- [Step 1 : Install Ubuntu image on VMware](#Step-1-VMwareWorkstation17)
-- [Step 2 : Windows settings for VMware WIFI](#windows-settings-for-VMware-WIFI)
-- [Step 3 : VMware Ubuntu settings](#VMware-Ubuntu-Settings)
+- [Step 1: Install OpenJDK Java 8](#step-1-install-openjdk-java-8)
+- [Step 2: Install Boost.Asio library](#step-2-install-boostasio-library)
+- [Step 3: Build the CommonAPI Runtime Library](#step-3-build-the-commonapi-runtime-library)
+- [Step 4: Build the vsomeip Library](#step-4-build-the-vsomeip-library)
+- [Step 5: Build the CommonAPI SOME/IP Runtime Library](#step-5-build-the-commonapi-someip-runtime-library)
+- [Step 6: Install Qt](#step-6-install-qt)
+- [Step 7: Execute Cluster & Controller](#step-7-Execute-Cluster-and-Controller)
 ---
+<br/>
 
-This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
+# CommonAPI vSomeIP QT Setup 
+If you have your own Ubuntu PC and don't want to use VMware, follow the steps below.<br>
+However, if you want to use VMware, click the following below.
 
-## Install Ubuntu image on VMware
-### Download and install VMware Workstation 17 Pro for Windows
+- [VMware Ubuntu image](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/VMware%20Ubuntu%20image/README.md)<br>
 
-https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<br><br>
+## Step 1: Install OpenJDK Java 8
+```bash
+sudo apt update
+sudo apt install openjdk-8-jdk
+```
 
+You can check installation
 
-### Download the VMware image for the preconfigured Ubuntu Linux
+```bash
+java --version
+```
 
-https://kookmin-my.sharepoint.com/:u:/g/personal/whchangjo_kookmin_kr/EV890pDrMZtNjcBFrNockZoBmwziAYeVqXMfHGtj0HieHA?e=0gfxtJ<br><Br>
+If you have installed both OpenJDK 8 and 11, your default version will OpenJDK 11.
+![스크린샷, 2023-07-07 21-58-18](https://github.com/AveesLab/sea-me-hackathon-2023/assets/96398568/49d28f85-6f4f-4ca6-a971-abfa95dd7f68)
 
+To manually set a Java version, start by running the following command
 
-#### open a virtual Ubuntu_Hackathon image
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/28508cce-357e-49f3-bb37-3ec94c9b6de5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open"></img><br><br>
+```bash
+sudo update-alternatives --config java
+```
 
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/112ac4ab-1f80-4f7d-a253-0944b7acbcd1" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open2"></img><br><br>
-
-
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/039c50d9-1896-4d89-8bf1-0a698986c950" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open3"></img><br><br>
-
-
-#### power on
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/2c37ac84-2347-4c30-9f02-ccdc31232ce0" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open4"></img><br><br>
-
-
-
-#### login ubuntu
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/e9c8c0f1-467c-4f11-9fb9-2540b657dae0" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="login"></img><br><br>
-
-### move to Cluster/Controller README
-[https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Cluster](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/Cluster/README.md)<br>
-[https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/Controller/README.md](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/Controller/README.md)<br>
-<br><br>
-
-
-
-## windows settings for VMware WIFI<br>
-*Based on win10*
+Select number and set OpenJDK 8 as the system default
+![스크린샷, 2023-07-07 21-58-41](https://github.com/AveesLab/sea-me-hackathon-2023/assets/96398568/130277ce-b1bd-4c0c-8375-8a877ab1c869)
+```bash
+java -version
+```
+![스크린샷, 2023-07-07 21-59-08](https://github.com/AveesLab/sea-me-hackathon-2023/assets/96398568/f3c6b169-3de6-4bba-83ba-087a9e92da07)
 
 
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/39679920-dbbe-410c-9efb-f930d1135a5c" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Untitled"></img><br><br>
+<br/>
+
+## Step 2: Install Boost.Asio library
+Install Boost-dev
+```bash
+sudo apt-get install libboost-all-dev
+```
+
+<br/>
+
+## Step 3: Build the CommonAPI Runtime Library
+
+Make working directory. In my case `build-commonapi`
+
+```bash
+cd ~
+mkdir build-commonapi && cd build-commonapi
+```
+
+Start with fetching the source code of CommonAPI:
+
+```bash
+git clone https://github.com/GENIVI/capicxx-core-runtime.git
+cd capicxx-core-runtime/
+git checkout 3.2.0
+mkdir build
+cd build
+cmake ..
+make -j6
+sudo make install
+```
+
+Result:
+
+```bash
+[100%] Linking C shared library libCommonAPI.so
+[100%] Built target CommonAPI
+```
+
+<br/>
+
+## Step 4: Build the vsomeip Library
 
 
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/7479d59d-bb6d-4602-9413-971ea376a2ea" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="vmware_wifi1"></img><br><br>
+```bash
+sudo apt-get install asciidoc source-highlight doxygen graphviz libgtest-dev
+```
+Before download SOME/IP Runtime library, you should download vsomeip. Because CommonAPI C++ SOME/IP need vsomeip.
+
+```bash
+cd ~
+cd build-commonapi
+git clone https://github.com/COVESA/vsomeip.git
+cd vsomeip
+git checkout 3.1.20.3
+mkdir build
+cd build
+cmake -DENABLE_SIGNAL_HANDLING=1 -DDIAGNOSIS_ADDRESS=0x10 ..
+make -j6
+sudo make install
+```
 
 
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/71b66e42-8dcb-4268-bbea-73c0bb558753" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="winwifiset1"></img><br><br>
+Result:
+
+```bash
+[100%] Linking CXX executable vsomeipd
+[100%] Built target vsomeipd
+```
+
+<br/>
+
+## Step 5: Build the CommonAPI SOME/IP Runtime Library
+
+Download CommonAPI SOME/IP Runtime Library and change version
+
+```bash
+cd ~
+cd build-commonapi
+git clone https://github.com/GENIVI/capicxx-someip-runtime.git
+cd capicxx-someip-runtime/
+git checkout 3.2.0
+mkdir build
+cd build
+cmake -DUSE_INSTALLED_COMMONAPI=OFF ..
+make -j6
+sudo make install
+
+```
+
+Result:
+
+```bash
+[100%] Linking CXX shared library libCommonAPI-SomeIP.so
+[100%] Built target CommonAPI-SomeIP
+```
+
+Add library path
+```bash
+cd ~
+sudo vi .bashrc
+```
+Add the command at the lowest line.
+```bash
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+```
+
+write the bashrc and exit
+
+*in terminal*
+```bash
+source .bashrc
+```
+<br/>
 
 
-#### VMware settings (Edit -> Virtual Network Editor)
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/56a925ee-be6a-406d-b937-520cba8535a9" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="vmware1"></img><br><br>
+
+## Step 6: Install Qt
 
 
-#### change settings
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/20d9b8b8-20c1-4081-b732-6a15680edec6" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="virtualneteditor"></img><br><br>
+```bash
+sudo apt-get install qt5-default
+sudo apt-get install qtcreator
+sudo apt-get install qtdeclarative5-dev
+```
+
+You must install Qt module
+```bash
+sudo apt-get install qtmultimedia5-dev
+sudo apt-get install qml-module-qtquick-controls2
+sudo apt-get install libqt5multimediawidgets5 libqt5multimedia5
+sudo apt-get install libqt5multimedia5-plugins qml-module-qtmultimedia
+```
 
 
-#### VMnet0 Bridged check (set VMnet0 Bridged(Automatic) -> Apply -> OK)
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/72f990b8-08ca-45d4-af25-d527a5484636" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="bridge"></img><br><br>
+<br/>
 
-
-## VMware Ubuntu Settings
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/6c2d604b-f0cb-44f7-a162-0f96415d8583" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="wifiubuntuset1"></img><br><br>
-
-
-#### hardware setup
-You should set Memory and Processors in recommended range<br>
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/0c0147a9-ae4c-493f-81a0-3fe76e7251b3" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="install_ram"></img><br><br>
-
-
-### Network Adapter (Custom: VMnet0)
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f0583e5e-d6c8-4809-b91a-9bda2d9d206f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="SetVMnet0"></img><br><br>
-
-### Network Connect
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/7ecbe022-a8f9-4e7b-b5d3-b8f3e00032ab" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="networkconnect"></img><br><br>
-
-
-### network ping check
-If the network settings of the two devices are well established, the ping test result can be checked as follows.<br>
-If ping transmission between the two devices is successful, preparations for vsomeip communication are completed.<br>
-<pre>
-<code>
-//check your device's IP address
-ifconfig -a
-</code>
-</pre>
-  <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/ebf358fd-5c51-41a5-ad92-6976392c2d01" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig-a"></img><br><br>
-
-
-### ping to TX2
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
-
-
-### ping to laptop VMware
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
-
-
-**If you've finished, please refer to the README of the cluster and controller**
+## Step 7: Execute Cluster and Controller
+The setup for CommonAPI vSomeIP QT is now complete!<br>
+You can run the Controller and Cluster by following the each README in the links below.
+- [Cluster](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Cluster)
+- [Controller](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Controller)
