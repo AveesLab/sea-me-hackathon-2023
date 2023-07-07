@@ -2,6 +2,11 @@
 
 During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board. However, you have to bring at least one intel CPU-based (Windows or Ubuntu Linux) laptop as a development environment. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. If you bring a native Ubuntu Linux laptop, that is also okay. Note that since we provide a preconfigured VMware image, using VMware is a little bit more convinient if you are not used to the Linux development environment.
 
+# CommonAPI vSomeIP QT Setup 
+If you have your own Ubuntu PC and don't want to use VMware, follow the steps below.<br>
+However, if you want to use VMware, click the following below.
+
+- [VMware Ubuntu image](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/VMware%20Ubuntu%20image/README.md)<br>
 ## Contents
 - [Step 1: Install OpenJDK Java 8](#step-1-install-openjdk-java-8)
 - [Step 2: Install Boost.Asio library](#step-2-install-boostasio-library)
@@ -9,16 +14,9 @@ During this hackathon, your mission is to develop a new digital instrument clust
 - [Step 4: Build the vsomeip Library](#step-4-build-the-vsomeip-library)
 - [Step 5: Build the CommonAPI SOME/IP Runtime Library](#step-5-build-the-commonapi-someip-runtime-library)
 - [Step 6: Install Qt](#step-6-install-qt)
-- [Step 7: Execute Cluster & Controller](#step-7-Execute-Cluster-and-Controller)
+- [Step 7: Execute Cluster & Controller](#step-7-execute-cluster-and-controller)
 ---
 <br>
-
-# CommonAPI vSomeIP QT Setup 
-If you have your own Ubuntu PC and don't want to use VMware, follow the steps below.<br>
-However, if you want to use VMware, click the following below.
-
-- [VMware Ubuntu image](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/VMware%20Ubuntu%20image/README.md)<br>
-
 ## Step 1: Install OpenJDK Java 8
 ```bash
 sudo apt update
