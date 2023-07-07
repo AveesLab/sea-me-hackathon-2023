@@ -1,6 +1,5 @@
 # VMware Ubuntu image
-<br><br>
-
+<br>
 This project provides a set Ubuntu image file. Therefore, you need to install VMware to use image files.<br><br>
 
 ## Install Ubuntu image on VMware
