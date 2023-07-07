@@ -29,10 +29,6 @@ https://www.~~~~~~~~~<br><Br>
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/039c50d9-1896-4d89-8bf1-0a698986c950" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open3"></img><br><br>
 
 
-
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/705c89d8-ad3f-4709-a8e2-b615046d4782" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="installimage3"></img><br><br>
-
-
 #### power on
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/2c37ac84-2347-4c30-9f02-ccdc31232ce0" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="open4"></img><br><br>
 
