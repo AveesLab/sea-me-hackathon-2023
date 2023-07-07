@@ -1,4 +1,4 @@
-# VMWare Setup<br>
+# VMware Setup<br>
 
 
 ## Contents
