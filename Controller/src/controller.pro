@@ -34,26 +34,26 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build-commonapi/capicxx-core-runtime/build/release/ -lCommonAPI
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build-commonapi/capicxx-core-runtime/build/debug/ -lCommonAPI
-else:unix: LIBS += -L$$PWD/../../../build-commonapi/capicxx-core-runtime/build/ -lCommonAPI
+win32:CONFIG(release, debug|release): LIBS += -L/usr/local/lib/release/ -lCommonAPI
+else:win32:CONFIG(debug, debug|release): LIBS += -L/usr/local/lib/debug/ -lCommonAPI
+else:unix: LIBS += -L/usr/local/lib/ -lCommonAPI
 
-INCLUDEPATH += $$PWD/../../../build-commonapi/capicxx-core-runtime/include
-DEPENDPATH += $$PWD/../../../build-commonapi/capicxx-core-runtime/include
+INCLUDEPATH += /usr/local/include/CommonAPI-3.2
+DEPENDPATH += /usr/local/include/CommonAPI-3.2
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build-commonapi/capicxx-someip-runtime/build/release/ -lCommonAPI-SomeIP
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build-commonapi/capicxx-someip-runtime/build/debug/ -lCommonAPI-SomeIP
-else:unix: LIBS += -L$$PWD/../../../build-commonapi/capicxx-someip-runtime/build/ -lCommonAPI-SomeIP
+win32:CONFIG(release, debug|release): LIBS += -L/usr/local/lib/release/ -lCommonAPI-SomeIP
+else:win32:CONFIG(debug, debug|release): LIBS += -L/usr/local/lib/debug/ -lCommonAPI-SomeIP
+else:unix: LIBS += -L/usr/local/lib/ -lCommonAPI-SomeIP
 
-INCLUDEPATH += $$PWD/../../../build-commonapi/capicxx-someip-runtime/include
-DEPENDPATH += $$PWD/../../../build-commonapi/capicxx-someip-runtime/include
+INCLUDEPATH += /usr/local/include/CommonAPI-3.2
+DEPENDPATH += /usr/local/include/CommonAPI-3.2
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build-commonapi/vsomeip/build/release/ -lvsomeip3
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build-commonapi/vsomeip/build/debug/ -lvsomeip3
-else:unix: LIBS += -L$$PWD/../../../build-commonapi/vsomeip/build/ -lvsomeip3
+win32:CONFIG(release, debug|release): LIBS += -L/usr/local/lib/release/ -lvsomeip3
+else:win32:CONFIG(debug, debug|release): LIBS += -L/usr/local/lib/debug/ -lvsomeip3
+else:unix: LIBS += -L/usr/local/lib/ -lvsomeip3
 
-INCLUDEPATH += $$PWD/../../../build-commonapi/vsomeip/interface
-DEPENDPATH += $$PWD/../../../build-commonapi/vsomeip/interface
+INCLUDEPATH += /usr/local/include
+DEPENDPATH += /usr/local/include
 
 HEADERS += \
     ../../src-gen-cluster/v1/commonapi/Cluster.hpp \
