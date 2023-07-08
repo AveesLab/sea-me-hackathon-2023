@@ -55,7 +55,7 @@ java -version
 ## Step 2: Install the Boost.Asio library
 Boost.Asio is a C++ network library.
 ```bash
-sudo apt-get install libboost-all-dev
+sudo apt install libboost-all-dev
 ```
 
 <br/>
@@ -95,7 +95,7 @@ Result:
 
 Install dependent packages.
 ```bash
-sudo apt-get install asciidoc source-highlight doxygen graphviz libgtest-dev
+sudo apt install asciidoc source-highlight doxygen graphviz libgtest-dev
 ```
 Before download SOME/IP Runtime library, you should download vsomeip. Because CommonAPI C++ SOME/IP need vsomeip.
 
@@ -170,17 +170,17 @@ source .bashrc
 
 
 ```bash
-sudo apt-get install qt5-default
-sudo apt-get install qtcreator
-sudo apt-get install qtdeclarative5-dev
+sudo apt install qt5-default
+sudo apt install qtcreator
+sudo apt install qtdeclarative5-dev
 ```
 
 You must install Qt module
 ```bash
-sudo apt-get install qtmultimedia5-dev
-sudo apt-get install qml-module-qtquick-controls2
-sudo apt-get install libqt5multimediawidgets5 libqt5multimedia5
-sudo apt-get install libqt5multimedia5-plugins qml-module-qtmultimedia
+sudo apt install qtmultimedia5-dev
+sudo apt install qml-module-qtquick-controls2
+sudo apt install libqt5multimediawidgets5 libqt5multimedia5
+sudo apt install libqt5multimedia5-plugins qml-module-qtmultimedia
 ```
 
 
