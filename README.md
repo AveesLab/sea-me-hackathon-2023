@@ -81,14 +81,14 @@ cmake ..
 make -j6
 sudo make install
 ```
-<!---
+
 Result:
 
 ```bash
 [100%] Linking C shared library libCommonAPI.so
 [100%] Built target CommonAPI
 ```
--->
+
 <br/>
 
 ## Step 4: Build the vsomeip library
