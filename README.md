@@ -1,10 +1,10 @@
 # SEA:ME@Korea 2023 Summer Hackathon<br>
 
-During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board that is the final target system. However, the instrument cluster can run on Intel/AMD CPU-based Ubuntu Linux distributions. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. We provide a preconfigured VMware image that includes all the libraries, tools, and source codes ready for the hackathon.
+During this hackathon, your mission is to develop a new digital instrument cluster system based on our baseline implementation in this repository. We'll provide you an Nvidia Jetson TX 2 embedded board that is the final target system. However, the instrument cluster can run on Intel/AMD CPU-based Ubuntu Linux distributions. If you use a Windows laptop, you have to install VMware and Ubuntu Linux as a guest operating system. We provide a preconfigured VMware image that includes all the libraries, tools, and source codes ready for the hackathon in the following link:
 
 - [VMware Ubuntu image](https://github.com/AveesLab/sea-me-hackathon-2023/blob/master/VMware%20Ubuntu%20image/README.md)<br>
 
-If you want to use a native Ubuntu Linux environment, you have to install (i) vsomeip, (ii) CommonAPI, and (iii) QT5. Please follow the instructions below to prepare your development environment:
+Otherwise, if you want to use a native Linux environment, you have to install (i) vsomeip, (ii) CommonAPI, and (iii) QT5. Please follow the instructions below to prepare your development environment:
 <!---
 ## Contents
 - [Step 1: Install OpenJDK Java 8](#step-1-install-openjdk-java-8)
@@ -30,19 +30,19 @@ sudo apt install openjdk-8-jdk
 You can check installation
 
 ```bash
-java --version
+java -version
 ```
 
-If you have installed both OpenJDK 8 and 11, your default version will OpenJDK 11.
+If you already have openJDK 11 in your system, your default JDK version will be 11.
 ![스크린샷, 2023-07-07 21-58-18](https://github.com/AveesLab/sea-me-hackathon-2023/assets/96398568/49d28f85-6f4f-4ca6-a971-abfa95dd7f68)
 
-To manually set a Java version, start by running the following command
+Then you can change the JDK version using the following command:
 
 ```bash
 sudo update-alternatives --config java
 ```
 
-Select number and set OpenJDK 8 as the system default
+Please select java-8 as in the following: 
 ![스크린샷, 2023-07-07 21-58-41](https://github.com/AveesLab/sea-me-hackathon-2023/assets/96398568/130277ce-b1bd-4c0c-8375-8a877ab1c869)
 ```bash
 java -version
