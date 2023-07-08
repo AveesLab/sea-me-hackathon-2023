@@ -60,7 +60,7 @@ sudo apt-get install libboost-all-dev
 
 <br/>
 
-## Step 3: Build the CommonAPI runtime library
+## Step 3: Build the CommonAPI core runtime
 
 Create a build directory, which is `build-commonapi` in my case.
 
