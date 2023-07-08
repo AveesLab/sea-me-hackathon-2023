@@ -52,24 +52,24 @@ java -version
 
 <br/>
 
-## Step 2: Install Boost.Asio library
-Install Boost-dev
+## Step 2: Install the Boost.Asio library
+Boost.Asio is a C++ network library.
 ```bash
 sudo apt-get install libboost-all-dev
 ```
 
 <br/>
 
-## Step 3: Build the CommonAPI Runtime Library
+## Step 3: Build the CommonAPI runtime library
 
-Make working directory. In my case `build-commonapi`
+Create a build directory, which is `build-commonapi` in my case.
 
 ```bash
 cd ~
 mkdir build-commonapi && cd build-commonapi
 ```
 
-Start with fetching the source code of CommonAPI:
+Download, build, and install the CommonAPI runtime.
 
 ```bash
 git clone https://github.com/GENIVI/capicxx-core-runtime.git
@@ -81,19 +81,19 @@ cmake ..
 make -j6
 sudo make install
 ```
-
+<!---
 Result:
 
 ```bash
 [100%] Linking C shared library libCommonAPI.so
 [100%] Built target CommonAPI
 ```
-
+-->
 <br/>
 
-## Step 4: Build the vsomeip Library
+## Step 4: Build the vsomeip library
 
-
+Install dependent packages.
 ```bash
 sudo apt-get install asciidoc source-highlight doxygen graphviz libgtest-dev
 ```
