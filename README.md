@@ -165,7 +165,7 @@ Add the following line at the end of the .bash file:
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 
-source the bashrc
+Source the .bashrc.
 
 ```bash
 source .bashrc
