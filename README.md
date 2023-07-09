@@ -105,7 +105,7 @@ Install dependent packages.
 ```bash
 sudo apt install asciidoc source-highlight doxygen graphviz libgtest-dev
 ```
-Before downloading the SOME/IP Runtime library, you should download vsomeip.
+Download and build the vsomeip library.
 
 ```bash
 cd ~
