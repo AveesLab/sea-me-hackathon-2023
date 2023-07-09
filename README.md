@@ -29,6 +29,7 @@ sudo apt install cmake
 ```
 
 <br/>
+
 ## Step 1: Install OpenJDK Java 8
 ```bash
 sudo apt install openjdk-8-jdk
