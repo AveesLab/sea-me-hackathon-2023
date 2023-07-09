@@ -130,9 +130,9 @@ Result:
 
 <br/>
 
-## Step 5: Build the CommonAPI SOME/IP Runtime Library
+## Step 5: Build the CommonAPI SOME/IP runtime library
 
-Download CommonAPI SOME/IP Runtime Library and change version
+Download and build the CommonAPI SOME/IP runtime library.
 
 ```bash
 cd ~
