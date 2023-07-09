@@ -21,9 +21,16 @@ Otherwise, if you want to use a native Linux environment, you have to install (i
 # CommonAPI vSomeIP QT Setup
 -->
 
-## Step 1: Install OpenJDK Java 8
+## Step 0: Make sure you have installed git and cmake
 ```bash
 sudo apt update
+sudo apt install git
+sudo apt install cmake
+```
+
+<br/>
+## Step 1: Install OpenJDK Java 8
+```bash
 sudo apt install openjdk-8-jdk
 ```
 
