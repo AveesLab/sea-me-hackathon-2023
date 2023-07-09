@@ -176,14 +176,14 @@ source .bashrc
 
 ## Step 6: Install Qt
 
-
+Install the QT5 packages.
 ```bash
 sudo apt install qt5-default
 sudo apt install qtcreator
 sudo apt install qtdeclarative5-dev
 ```
 
-You must install Qt module
+You must install the QT Multimdeia module.
 ```bash
 sudo apt install qtmultimedia5-dev
 sudo apt install qml-module-qtquick-controls2
