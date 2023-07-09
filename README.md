@@ -105,7 +105,7 @@ Install dependent packages.
 ```bash
 sudo apt install asciidoc source-highlight doxygen graphviz libgtest-dev
 ```
-Before download SOME/IP Runtime library, you should download vsomeip. Because CommonAPI C++ SOME/IP need vsomeip.
+Before downloading the SOME/IP Runtime library, you should download vsomeip.
 
 ```bash
 cd ~
