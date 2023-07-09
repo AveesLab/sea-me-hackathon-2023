@@ -160,12 +160,12 @@ Result:
 cd ~
 sudo vi .bashrc
 ```
-Add the command at the lowest line.
+Add the following line at the end of the .bash file:
 ```bash
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 
-exit the bashrc
+source the bashrc
 
 ```bash
 source .bashrc
@@ -195,7 +195,7 @@ sudo apt install libqt5multimedia5-plugins qml-module-qtmultimedia
 <br/>
 
 ## Step 7: Execute Cluster and Controller
-The setup for CommonAPI vSomeIP QT is now complete!<br>
-You can run the Controller and Cluster by following the each README in the links below.
+The environment setup is completed.<br>
+You can run the Controller and Cluster by following each README in the links below:
 - [Cluster](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Cluster)
 - [Controller](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Controller)
