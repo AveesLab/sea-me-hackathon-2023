@@ -16,7 +16,7 @@ ifconfig -a
 <br><br>
 
 ### set route table
-below image is before add route table<br>
+Below image is before add route table<br>
 you have to set route table to use vsomeip communication
 ```bash
 route -n // check your route table
