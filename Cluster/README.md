@@ -16,7 +16,7 @@ ifconfig -a
 <br><br>
 
 ### set route table
-below image is before add route table<br>
+Below image is before add route table<br>
 you have to set route table to use vsomeip communication
 ```bash
 route -n // check your route table
@@ -24,7 +24,7 @@ route -n // check your route table
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/ba938278-007d-415b-a233-e94027b63fd1" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-44-12"></img>
 
 
-add route table
+Add route table
 ```bash
 sudo route add -nv 224.244.224.24X [your ethernet ID] // example: sudo route add -nv 224.244.224.243 wlan0
 route -n
@@ -37,7 +37,9 @@ cd sea-me-hackathon-2023/Controller/json
 vim vsomeip_client.json
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/72ac5fa2-af54-4e44-93b3-21bc2fc21e80" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="json"></img>
+Change the unicast number to your IP address.
 
+Change the multicast number to the multicast number assigned to you.
 
 ### execute controller
 ```bash
