@@ -26,7 +26,7 @@ route -n // check your route table
 
 add route table
 ```bash
-sudo route add -nv 224.244.224.24X [your ethernet ID]
+sudo route add -nv 224.244.224.24X [your ethernet ID] // example: sudo route add -nv 224.244.224.243 wlo1
 route -n
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/b1346758-c9a8-4575-97dd-5102d353b8a8" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-10-28"></img>
