@@ -1,4 +1,7 @@
-# Git clone
+# Controller Settings
+<br>
+
+### git clone
 <pre>
 <code>
 cd ~
