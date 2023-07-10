@@ -16,14 +16,20 @@ ifconfig -a
 <br><br>
 
 ### set route table
+below image is before add route table
 you have to set route table to use vsomeip communication
 ```bash
 route -n // check your route table
 ```
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/146701fc-1170-4bf9-a48d-955b5fac4a66" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-09-36"></img>
+
+
 add route table
 ```bash
 sudo route add -nv 224.244.224.24X [your ethernet ID]
+route -n
 ```
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/b1346758-c9a8-4575-97dd-5102d353b8a8" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-10-28"></img>
 
 # set vsomeip_client.json
 ```bash
