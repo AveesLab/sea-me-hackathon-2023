@@ -1,12 +1,49 @@
-# Execute Controller
-
+# Git clone
 <pre>
 <code>
 cd ~
 git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Controller/src
+</code>
+</pre>
+
+### Check your device IP adress
+<pre>
+<code>
+ifconfig -a
+</code>
+</pre>
+<br><br>
+
+### set route table
+you have to set route table to use vsomeip communication
+<pre>
+<code>
+route -n // check your route table
+</code>
+</pre>
+add route table
+<pre>
+<code>
+sudo route add -nv 224.244.224.24X [your ethernet ID]
+</code>
+</pre>
+
+# set vsomeip_client.json
+<pre>
+<code>
+cd sea-me-hackathon-2023/Controller/json
+vim vsomeip_client.json
+</code>
+</pre>
+
+### execute controller
+<pre>
+<code>
+cd ~
+cd sea-me-hackathon-2023/Controller/src
 qmake .
-make -j2
+make -jX
 ./controller
 </code>
 </pre>
