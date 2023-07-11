@@ -11,7 +11,8 @@ cd sea-me-hackathon-2023/Controller/src
 ```bash
 ifconfig -a
 ```
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/760acec3-8221-4dad-8126-9baef35b5a87" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img><br><br>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/4f3a10b1-789a-44a2-9de4-06c5c214b0b5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img><br><br>
+
 
 <br><br>
 
