@@ -37,7 +37,7 @@ route -n
 cd sea-me-hackathon-2023/Controller/json
 vim vsomeip_client.json
 ```
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/911bf7d2-2fd5-4faa-b4a9-0042daedd3a9" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="json"></img>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/f85c7bb1-18b0-400e-8be7-0dfc4df93961" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="json"></img>
 
 Change the unicast number to your IP address.
 
