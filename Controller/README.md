@@ -29,6 +29,8 @@ make -jX
 
 ## Device to Device Vsomeip communication
 <a name="device-to-device-vsomeip-communication"></a>
+The two devices must be connected to the same Wi-Fi for Vsomeip communication.<br>
+
 
 ### Check your device IP adress
 ```bash
