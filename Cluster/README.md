@@ -1,7 +1,7 @@
 # Cluster Settings
 You can run two executables simultaneously on one device.<br>
 The json file is only required when applying communication between devices.<br>
-Please follow the Device to Device Vsomwip communication instructions below to communicate between devices.<br>
+Please follow the Device to Device Vsomeip communication instructions below to communicate between devices.<br>
 
 ### git clone
 ```bash
