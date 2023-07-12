@@ -39,17 +39,17 @@ ifconfig -a
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/fc6d9446-9ab7-4ce7-8a25-e5214dcd63fe" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img>
 <br>
 
-### network ping check
+### Network ping check
 You can check if communication is possible by ping test between devices.
 
-### ping to TX2
+### Ping to TX2
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
 
 
-### ping to laptop
+### Ping to laptop
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
 
-### set route table
+### Set route table
 Below image is before add route table<br>
 you have to set route table to use vsomeip communication
 ```bash
@@ -65,7 +65,7 @@ route -n
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/901b3af8-f49c-4488-9286-cbb9bf7c21ff" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-44-36"></img>
 
-# set vsomeip_cluster.json
+# Set vsomeip_cluster.json
 ```bash
 cd sea-me-hackathon-2023/Cluster/json
 vim vsomeip_server.json
