@@ -66,7 +66,7 @@ cd ~
 cd sea-me-hackathon-2023/Cluster/src
 qmake .
 make -jX
-chmod +x do_cluster.sh
+chmod +x do_cluster.sh // Commands with 'do_~.sh' are intended to be executed by applying the json file.
 ./do_cluster.sh
 ```
 
