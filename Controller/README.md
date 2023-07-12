@@ -1,11 +1,23 @@
 # Controller Settings
 <br>
 
-### git clone
+### Git clone
 ```bash
 cd ~
 git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Controller/src
+```
+
+### Execute Cluster and Controller in one device
+```bash
+qmake .
+make -jX
+```
+
+### Open two terminals for Cluster and Controller
+```bash
+./cluster
+./controller
 ```
 ### Check your device IP adress
 ```bash
