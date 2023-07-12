@@ -31,8 +31,7 @@ make -jX
 ifconfig -a
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/fc6d9446-9ab7-4ce7-8a25-e5214dcd63fe" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img>
-
-<br><br>
+<br>
 
 ### network ping check
 You can check if communication is possible by ping test between devices.
