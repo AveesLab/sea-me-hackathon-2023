@@ -71,7 +71,7 @@ cd ~
 cd sea-me-hackathon-2023/Controller/src
 qmake .
 make -jX
-chmod +x do_controller.sh // Commands with '.sh' are intended to be executed by applying the json file.
+chmod +x do_controller.sh // Commands with 'do_~.sh' are intended to be executed by applying the json file.
 ./do_controller.sh
 ```
 
