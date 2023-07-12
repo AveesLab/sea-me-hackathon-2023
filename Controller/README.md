@@ -38,17 +38,17 @@ ifconfig -a
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/4f3a10b1-789a-44a2-9de4-06c5c214b0b5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img><br><br>
 
-### network ping check
+### Network ping check
 You can check if communication is possible by ping test between devices.
 
-### ping to TX2
+### Ping to TX2
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
 
 
-### ping to laptop
+### Ping to laptop
 <img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
 
-### set route table
+### Set route table
 Below image is before add route table<br>
 you have to set route table to use vsomeip communication
 ```bash
@@ -64,7 +64,7 @@ route -n
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/b1346758-c9a8-4575-97dd-5102d353b8a8" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-10-28"></img>
 
-### set vsomeip_client.json
+### Set vsomeip_client.json
 ```bash
 cd sea-me-hackathon-2023/Controller/json
 vim vsomeip_client.json
@@ -75,7 +75,7 @@ Change the unicast number to your IP address.
 
 Change the multicast number to the multicast number assigned to you.
 
-### execute controller
+### Execute controller
 ```bash
 cd ~
 cd sea-me-hackathon-2023/Controller/src
