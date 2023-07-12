@@ -10,16 +10,15 @@ git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Cluster/src
 ```
 
-### Execute Cluster and Controller in one device
+### Make Cluster
 ```bash
 qmake .
 make -jX
 ```
 
-### Open two terminals for Cluster and Controller
+### Excute Cluster
 ```bash
 ./cluster
-./controller
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/511af2db-1641-4fba-a999-c82a4caa6c84" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-12 10-32-38"></img><br><br><br>
 
