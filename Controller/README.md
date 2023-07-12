@@ -1,7 +1,7 @@
 # Controller Settings
 You can run two executables simultaneously on one device.<br>
 The json file is only required when applying communication between devices.<br>
-Please follow the Device to Device Vsomeip communication instructions below to communicate between devices.<br>
+Please follow the Device to Device Vsomwip communication instructions below to communicate between devices.<br>
 <br>
 
 ### Git clone
@@ -11,17 +11,18 @@ git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Controller/src
 ```
 
-### Make Controller
+### Make
 ```bash
 qmake .
 make -jX
 ```
 
-### Execute Controller
+### Open two terminals for Cluster and Controller
 ```bash
+./cluster
 ./controller
 ```
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/31fb5ead-1796-49ba-a4fa-fa7fb004110e" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="displaycontroller"></img><br><br><br>
+<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/511af2db-1641-4fba-a999-c82a4caa6c84" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-12 10-32-38"></img><br><br><br>
 
 ## Device to Device Vsomeip communication
 
@@ -32,8 +33,15 @@ ifconfig -a
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/4f3a10b1-789a-44a2-9de4-06c5c214b0b5" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img><br><br>
 
+### network ping check
+You can check if communication is possible by ping test between devices.
 
-<br><br>
+### ping to TX2
+<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
+
+
+### ping to laptop
+<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
 
 ### set route table
 Below image is before add route table<br>
