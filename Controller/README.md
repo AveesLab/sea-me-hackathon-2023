@@ -1,6 +1,7 @@
 # Controller Settings
 You can run two executables [simultaneously on one device](#process-to-process-vsomeip-communication).<br>
 The json file is only required when applying communication between devices.<br>
+The two devices must be connected to the same Wi-Fi for Vsomeip communication.<br>
 Please follow the [Device to Device Vsomeip communication](#device-to-device-vsomeip-communication) instructions below to communicate between devices.<br>
 <br>
 
