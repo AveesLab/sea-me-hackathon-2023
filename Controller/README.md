@@ -11,7 +11,7 @@ cd sea-me-hackathon-2023/Controller/src
 ### Execute Cluster and Controller in one device
 You can run two executables simultaneously on one device.<br>
 The json file is only required when applying communication between devices.<br>
-Please follow the instructions below to communicate between devices.<br>
+Please follow the Device to Device Vsomwip communication instructions below to communicate between devices.<br>
 
 ```bash
 qmake .
