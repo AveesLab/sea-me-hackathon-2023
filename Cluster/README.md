@@ -2,7 +2,6 @@
 You can run two executables simultaneously on one device.<br>
 The json file is only required when applying communication between devices.<br>
 Please follow the Device to Device Vsomwip communication instructions below to communicate between devices.<br>
-<br>
 
 ### git clone
 ```bash
@@ -23,6 +22,8 @@ make -jX
 ./controller
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/511af2db-1641-4fba-a999-c82a4caa6c84" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-12 10-32-38"></img><br><br><br>
+
+## Device to Device Vsomeip communication
 
 ### Check your device IP adress
 ```bash
