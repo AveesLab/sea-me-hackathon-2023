@@ -11,7 +11,7 @@ git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Controller/src
 ```
 
-### Execute Cluster and Controller in one device
+### Make
 ```bash
 qmake .
 make -jX
