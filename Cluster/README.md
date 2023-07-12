@@ -34,6 +34,16 @@ ifconfig -a
 
 <br><br>
 
+### network ping check
+You can check if communication is possible by ping test between devices.
+
+### ping to TX2
+<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
+
+
+### ping to laptop
+<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
+
 ### set route table
 Below image is before add route table<br>
 you have to set route table to use vsomeip communication
