@@ -133,6 +133,8 @@ public:
     virtual std::future<CommonAPI::CallStatus> clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
 
 
+    virtual void updateFuelEff(int32_t _rpm, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> updateFuelEffAsync(const int32_t &_rpm, UpdateFuelEffAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
 
  private:
     std::shared_ptr< ClusterProxyBase> delegate_;
@@ -180,6 +182,16 @@ void ClusterProxy<_AttributeExtensions...>::clickButtons(std::string _command, C
 template <typename ... _AttributeExtensions>
 std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
     return delegate_->clickButtonsAsync(_command, _callback, _info);
+}
+
+template <typename ... _AttributeExtensions>
+void ClusterProxy<_AttributeExtensions...>::updateFuelEff(int32_t _fueleff, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info) {
+    delegate_->updateFuelEff(_fueleff, _internalCallStatus, _status, _info);
+}
+
+template <typename ... _AttributeExtensions>
+std::future<CommonAPI::CallStatus> ClusterProxy<_AttributeExtensions...>::updateFuelEffAsync(const int32_t &_fueleff, UpdateFuelEffAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->updateFuelEffAsync(_fueleff, _callback, _info);
 }
 
 template <typename ... _AttributeExtensions>

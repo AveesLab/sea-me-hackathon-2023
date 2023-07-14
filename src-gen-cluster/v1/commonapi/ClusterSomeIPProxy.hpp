@@ -65,6 +65,10 @@ public:
 
     virtual std::future<CommonAPI::CallStatus> clickButtonsAsync(const std::string &_command, ClickButtonsAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
+    virtual void updateFuelEff(int32_t _fueleff, CommonAPI::CallStatus &_internalCallStatus, int32_t &_status, const CommonAPI::CallInfo *_info);
+
+    virtual std::future<CommonAPI::CallStatus> updateFuelEffAsync(const int32_t &_fueleff, UpdateFuelEffAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+
     virtual void getOwnVersion(uint16_t &_major, uint16_t &_minor) const;
 
     virtual std::future<void> getCompletionFuture();

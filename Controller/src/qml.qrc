@@ -5,7 +5,16 @@
         <file>image/on.png</file>
         <file>image/warn.png</file>
         <file>image/warn1.png</file>
+        <file>image/left.png</file>
+        <file>image/left1.png</file>
+        <file>image/right.png</file>
+        <file>image/right1.png</file>
         <file>image/weather.png</file>
         <file>image/weather1.png</file>
+        <file>image/engine_start.png</file>
+        <file>image/engine_stop.png</file>
+        <file>image/start_sound.mp3</file>
+        <file>image/fuel.png</file>
+        <file>image/enginetemp.png</file>
     </qresource>
 </RCC>

@@ -19,7 +19,8 @@ SOURCES += \
     main.cpp \
     RPM.cpp \
     Speed.cpp \
-    Buttons.cpp
+    Buttons.cpp \
+    FuelEff.cpp
 
 RESOURCES += qml.qrc
 
@@ -66,4 +67,5 @@ HEADERS += \
     ../../src-gen-cluster/v1/commonapi/ClusterStubDefault.hpp \
     Speed.h \
     RPM.h \
-    Buttons.h
+    Buttons.h \
+    FuelEff.h

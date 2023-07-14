@@ -1,12 +1,46 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>image/back.png</file>
-        <file>image/car1.png</file>
-        <file>image/dial.png</file>
         <file>image/rpm.png</file>
         <file>image/star.png</file>
         <file>image/volk.png</file>
-        <file>image/warning.png</file>
+        <file>image/0.png</file>
+        <file>image/20.png</file>
+        <file>image/40.png</file>
+        <file>image/60.png</file>
+        <file>image/80.png</file>
+        <file>image/100.png</file>
+        <file>image/120.png</file>
+        <file>image/140.png</file>
+        <file>image/160.png</file>
+        <file>image/180.png</file>
+        <file>image/200.png</file>
+        <file>image/260.png</file>
+        <file>image/back_blue.png</file>
+        <file>image/back_L.png</file>
+        <file>image/back_R.png</file>
+        <file>image/back_red.png</file>
+        <file>image/blackcircle.png</file>
+        <file>image/car_back.png</file>
+        <file>image/car_back_L.png</file>
+        <file>image/car_back_LR.png</file>
+        <file>image/car_back_R.png</file>
+        <file>image/car_front.png</file>
+        <file>image/dial_2.png</file>
+        <file>image/start_light.png</file>
+        <file>image/back_blue_s.png</file>
+        <file>image/back_L_s.png</file>
+        <file>image/back_red_s.png</file>
+        <file>image/back_R_s.png</file>
+        <file>image/230.png</file>
+        <file>image/sport_effect.png</file>
+        <file>image/leftmirr2.png</file>
+        <file>image/rightmirr2.png</file>
+        <file>image/enginetemp.png</file>
+        <file>image/fuel.png</file>
+        <file>image/graycircle.png</file>
+        <file>image/backimage.png</file>
+        <file>image/eco2.png</file>
+        <file>image/city.png</file>
     </qresource>
 </RCC>
