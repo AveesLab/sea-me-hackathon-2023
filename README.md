@@ -199,3 +199,6 @@ The environment setup is completed.<br>
 You can run the Controller and Cluster by following each README in the links below:
 - [Cluster](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Cluster)
 - [Controller](https://github.com/AveesLab/sea-me-hackathon-2023/tree/master/Controller)
+
+## We Use Open Source UXPlay
+https://github.com/antimof/UxPlay
