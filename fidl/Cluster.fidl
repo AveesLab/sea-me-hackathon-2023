@@ -26,4 +26,12 @@ interface Cluster {
       Int32 status
     }
   }
+  method updateFuelEff {
+    in {
+      Int32 fueleff
+    }
+    out {
+      Int32 status
+    }
+  }
 }

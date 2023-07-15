@@ -1,55 +1,21 @@
 # Cluster Settings
-You can run two executables [simultaneously on one device](#process-to-process-vsomeip-communication).<br>
-The json file is only required when applying communication between devices.<br>
-The two devices must be connected to the same Wi-Fi for Vsomeip communication.<br>
-Please follow the [Device to Device Vsomeip communication](#device-to-device-vsomeip-communication) instructions below to communicate between devices.<br>
 <br>
 
-## Process to Process Vsomeip communication
-<a name="process-to-process-vsomeip-communication"></a>
-
-### Git clone
+### git clone
 ```bash
 cd ~
 git clone https://github.com/AveesLab/sea-me-hackathon-2023.git
 cd sea-me-hackathon-2023/Cluster/src
 ```
-
-### Make Cluster
-```bash
-qmake .
-make -jX
-```
-
-### Execute Cluster
-```bash
-./cluster
-```
-<img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/6e168588-6af5-44fa-8721-9e3c23f5092f" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-11 13-09-46"></img><br><br><br>
-
-## Device to Device Vsomeip communication
-<a name="device-to-device-vsomeip-communication"></a>
-The two devices must be connected to the same Wi-Fi for Vsomeip communication.<br>
-
-
 ### Check your device IP adress
 ```bash
 ifconfig -a
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/fc6d9446-9ab7-4ce7-8a25-e5214dcd63fe" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ifconfig"></img>
-<br>
 
-### Network ping check
-You can check if communication is possible by ping test between devices.
+<br><br>
 
-### Ping to TX2
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/06ef3f9e-3e89-468e-aa5b-1985d7b73dae" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping_to_tx2"></img><br><br>
-
-
-### Ping to laptop
-<img src="https://github.com/AveesLab/hackathon-someip/assets/125881959/349ef132-b782-4f6d-bb54-e722a2ff6308" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="ping to laptop"></img><br><br>
-
-### Set route table
+### set route table
 Below image is before add route table<br>
 you have to set route table to use vsomeip communication
 ```bash
@@ -65,7 +31,7 @@ route -n
 ```
 <img src="https://github.com/AveesLab/sea-me-hackathon-2023/assets/125881959/901b3af8-f49c-4488-9286-cbb9bf7c21ff" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="Screenshot from 2023-07-10 18-44-36"></img>
 
-# Set vsomeip_cluster.json
+# set vsomeip_cluster.json
 ```bash
 cd sea-me-hackathon-2023/Cluster/json
 vim vsomeip_server.json
@@ -76,13 +42,13 @@ Change the unicast number to your IP address.
 
 Change the multicast number to the multicast number assigned to you.
 
-### Execute cluster
+### execute cluster
 ```bash
 cd ~
 cd sea-me-hackathon-2023/Cluster/src
 qmake .
 make -jX
-chmod +x do_cluster.sh // Commands with 'do_~.sh' are intended to be executed by applying the json file.
+chmod +x do_cluster.sh
 ./do_cluster.sh
 ```
 

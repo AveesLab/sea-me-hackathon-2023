@@ -78,6 +78,12 @@ public:
         int32_t status = 0;
         _reply(status);
     }
+    COMMONAPI_EXPORT virtual void updateFuelEff(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _fueleff, updateFuelEffReply_t _reply) {
+        (void)_client;
+        (void)_fueleff;
+        int32_t status = 0;
+        _reply(status);
+    }
 
 
 protected:
